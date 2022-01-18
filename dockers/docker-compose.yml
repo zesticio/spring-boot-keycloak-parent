@@ -1,0 +1,48 @@
+version: '3'
+
+services:
+
+  mariadb:
+    image: yobasystems/alpine-mariadb
+    ports:
+      - 3306:3306
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_USER: admin
+      MYSQL_PASSWORD: admin
+      MYSQL_DATABASE: nikamooz
+      MYSQL_CHARSET: utf8
+      MYSQL_COLLATION: utf8_general_ci
+    volumes:
+      - ./data/mysql:/var/lib/mysql
+    networks:
+      - keycloak_network
+
+  keycloak-service:
+    image: jboss/keycloak:12.0.4
+    environment:
+      DB_VENDOR: MARIADB
+      DB_ADDR: db
+      DB_DATABASE: ${DB}
+      DB_USER: ${DB_USER}
+      DB_PASSWORD: ${DB_PASSWORD}
+      DB_SCHEMA: public
+      KEYCLOAK_USER: admin
+      KEYCLOAK_PASSWORD: admin
+      KEYCLOAK_IMPORT: /tmp/realm-export.json
+      # KEYCLOAK_LOGLEVEL: DEBUG
+      PROXY_ADDRESS_FORWARDING: "true" # important for reverse proxy
+      JAVA_OPTS: "-server -Xms1024m -Xmx1024m" # assign more memory otherwise container tends to crash
+    volumes:
+      - ./files/realm-export.json:/tmp/realm-export.json
+    depends_on:
+      - mariadb
+    expose:
+      - 8080
+    networks:
+      - keycloak_network
+
+networks:
+  backend-network:
+    driver: bridge
+    name: keycloak_network
