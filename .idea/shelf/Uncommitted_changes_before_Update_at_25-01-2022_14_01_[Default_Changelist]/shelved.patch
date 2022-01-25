@@ -1,0 +1,55 @@
+Index: .idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"6f4b3ea0-70a0-4591-936d-e4d392a5fffa\" name=\"Default Changelist\" comment=\"Updated\" />\r\n    <list id=\"eecc96a7-54e3-4bf1-ba05-5b33bd38fd20\" name=\"Updated\" comment=\"\" />\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"ComposerSettings\">\r\n    <execution />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_GIT_ROOT_PATH\" value=\"$PROJECT_DIR$\" />\r\n  </component>\r\n  <component name=\"ProjectId\" id=\"23pd8Xp75GgmDFSF6QYHNWf3rpg\" />\r\n  <component name=\"ProjectLevelVcsManager\">\r\n    <ConfirmationsSetting value=\"2\" id=\"Add\" />\r\n  </component>\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\">\r\n    <property name=\"RunOnceActivity.OpenProjectViewOnStart\" value=\"true\" />\r\n    <property name=\"RunOnceActivity.ShowReadmeOnStart\" value=\"true\" />\r\n    <property name=\"WebServerToolWindowFactoryState\" value=\"false\" />\r\n    <property name=\"aspect.path.notification.shown\" value=\"true\" />\r\n    <property name=\"last_opened_file_path\" value=\"$PROJECT_DIR$/../../..\" />\r\n    <property name=\"node.js.detected.package.eslint\" value=\"true\" />\r\n    <property name=\"node.js.path.for.package.eslint\" value=\"project\" />\r\n    <property name=\"node.js.selected.package.eslint\" value=\"(autodetect)\" />\r\n    <property name=\"settings.editor.selected.configurable\" value=\"configurable.group.appearance\" />\r\n  </component>\r\n  <component name=\"RecentsManager\">\r\n    <key name=\"CopyFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\GitHub\\Zestic\\Authy\\Source\\authy\\dockers\" />\r\n    </key>\r\n    <key name=\"MoveFile.RECENT_KEYS\">\r\n      <recent name=\"C:\\GitHub\\Zestic\\Authy\\Source\\authy\\dockers\\nginx\" />\r\n    </key>\r\n  </component>\r\n  <component name=\"RunManager\">\r\n    <configuration default=\"true\" type=\"ArquillianJUnit\" factoryName=\"\" nameIsGenerated=\"true\">\r\n      <option name=\"arquillianRunConfiguration\">\r\n        <value>\r\n          <option name=\"containerStateName\" value=\"\" />\r\n        </value>\r\n      </option>\r\n      <option name=\"TEST_OBJECT\" value=\"class\" />\r\n      <method v=\"2\">\r\n        <option name=\"Make\" enabled=\"true\" />\r\n      </method>\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"6f4b3ea0-70a0-4591-936d-e4d392a5fffa\" name=\"Default Changelist\" comment=\"\" />\r\n      <changelist id=\"eecc96a7-54e3-4bf1-ba05-5b33bd38fd20\" name=\"Updated\" comment=\"\" />\r\n      <created>1642434803983</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1642434803983</updated>\r\n      <workItem from=\"1642434805286\" duration=\"8000\" />\r\n      <workItem from=\"1642434836625\" duration=\"93000\" />\r\n      <workItem from=\"1642435099651\" duration=\"1368000\" />\r\n      <workItem from=\"1642493566348\" duration=\"17229000\" />\r\n      <workItem from=\"1642574552903\" duration=\"13693000\" />\r\n      <workItem from=\"1642689258087\" duration=\"394000\" />\r\n      <workItem from=\"1642690994625\" duration=\"598000\" />\r\n      <workItem from=\"1642744011502\" duration=\"8000\" />\r\n      <workItem from=\"1642835696587\" duration=\"1135000\" />\r\n      <workItem from=\"1642836853913\" duration=\"95000\" />\r\n      <workItem from=\"1642836952808\" duration=\"723000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"Updated\">\r\n      <created>1642835945442</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1642835945442</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Updated\">\r\n      <created>1642836558499</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1642836558499</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Updated\">\r\n      <created>1642837054696</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1642837054696</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Updated\">\r\n      <created>1642837062572</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1642837062572</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"5\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n    <option name=\"oldMeFiltersMigrated\" value=\"true\" />\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <MESSAGE value=\"Updated\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Updated\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/workspace.xml b/.idea/workspace.xml
+--- a/.idea/workspace.xml	(revision 7eb601ad69e0282555b68e75355f1b1f2597c5e2)
++++ b/.idea/workspace.xml	(date 1643099513273)
+@@ -44,19 +44,6 @@
+       <recent name="C:\GitHub\Zestic\Authy\Source\authy\dockers\nginx" />
+     </key>
+   </component>
+-  <component name="RunManager">
+-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+-      <option name="arquillianRunConfiguration">
+-        <value>
+-          <option name="containerStateName" value="" />
+-        </value>
+-      </option>
+-      <option name="TEST_OBJECT" value="class" />
+-      <method v="2">
+-        <option name="Make" enabled="true" />
+-      </method>
+-    </configuration>
+-  </component>
+   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+   <component name="TaskManager">
+     <task active="true" id="Default" summary="Default task">
+@@ -76,7 +63,7 @@
+       <workItem from="1642744011502" duration="8000" />
+       <workItem from="1642835696587" duration="1135000" />
+       <workItem from="1642836853913" duration="95000" />
+-      <workItem from="1642836952808" duration="723000" />
++      <workItem from="1642836952808" duration="1391000" />
+     </task>
+     <task id="LOCAL-00001" summary="Updated">
+       <created>1642835945442</created>
+@@ -106,7 +93,14 @@
+       <option name="project" value="LOCAL" />
+       <updated>1642837062572</updated>
+     </task>
+-    <option name="localTasksCounter" value="5" />
++    <task id="LOCAL-00005" summary="Updated">
++      <created>1642936965200</created>
++      <option name="number" value="00005" />
++      <option name="presentableId" value="LOCAL-00005" />
++      <option name="project" value="LOCAL" />
++      <updated>1642936965200</updated>
++    </task>
++    <option name="localTasksCounter" value="6" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
