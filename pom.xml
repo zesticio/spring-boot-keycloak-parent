@@ -21,6 +21,7 @@
         <mapdb.version>3.0.8</mapdb.version>
 
         <tools.log.version>1.0</tools.log.version>
+        <tools.retrofit.version>1.0</tools.retrofit.version>
         <spring-cloud.version>2020.0.0</spring-cloud.version>
     </properties>
 
