@@ -4,10 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="725fd97b-bd43-4c05-9114-caf163c1c455" name="Default Changelist" comment="">
+    <list default="true" id="725fd97b-bd43-4c05-9114-caf163c1c455" name="Default Changelist" comment="Updated">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keycloak/src/main/java/com/zestic/authy/keycloak/Client.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keycloak/src/main/java/com/zestic/authy/keycloak/ClientBuilder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keycloak/src/main/java/com/zestic/authy/keycloak/exception/KeycloakException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keycloak/src/main/java/com/zestic/authy/keycloak/utils/Security.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keycloak/src/main/java/com/zestic/authy/keycloak/utils/Utils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/authy.iml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -31,12 +39,17 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Reference/spring-keycloak-client-master" />
     <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -49,6 +62,41 @@
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\GitHub\Zestic\Authy\Source\authy\dockers\nginx" />
     </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.zestic.authy.keycloak" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.zestic.authy.keycloak.utils" />
+      <recent name="com.zestic.authy.keycloak.exception" />
+      <recent name="com.zestic.authy.keycloak.domain" />
+    </key>
+  </component>
+  <component name="RunAnythingCache">
+    <option name="myCommands">
+      <command value="mvn clean" />
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="KeycloakApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="keycloak" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zestic.authy.keycloak.KeycloakApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -70,7 +118,7 @@
       <workItem from="1642835696587" duration="1135000" />
       <workItem from="1642836853913" duration="95000" />
       <workItem from="1642836952808" duration="1391000" />
-      <workItem from="1643099505839" duration="346000" />
+      <workItem from="1643099505839" duration="7695000" />
     </task>
     <task id="LOCAL-00001" summary="Updated">
       <created>1642835945442</created>
@@ -107,7 +155,21 @@
       <option name="project" value="LOCAL" />
       <updated>1642936965200</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Updated">
+      <created>1643099882849</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1643099882849</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Updated">
+      <created>1643099900094</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1643099900094</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
