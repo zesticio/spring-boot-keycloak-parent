@@ -13,7 +13,6 @@ import java.util.Optional;
 
 public class Security {
 
-
     private Security() {
     }
 

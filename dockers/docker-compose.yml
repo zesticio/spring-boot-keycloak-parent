@@ -24,6 +24,10 @@ services:
     depends_on:
       - mariadb
     image: quay.io/keycloak/keycloak:latest
+    logging:
+      options:
+        max-size: "10m"
+        max-file: "3"
     container_name: authy-keycloak
     restart: unless-stopped
     environment:
@@ -34,7 +38,7 @@ services:
       - DB_DATABASE=keycloak
       - DB_USER=keycloak
       - DB_PASSWORD=keycloakrw
-      - KEYCLOAK_LOGLEVEL=DEBUG
+      - KEYCLOAK_LOGLEVEL=ERROR
       - PROXY_ADDRESS_FORWARDING=true
       # - DB_PORT: 9306
     ports:

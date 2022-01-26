@@ -5,16 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="725fd97b-bd43-4c05-9114-caf163c1c455" name="Default Changelist" comment="Updated">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keycloak/src/main/java/com/zestic/authy/keycloak/Client.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keycloak/src/main/java/com/zestic/authy/keycloak/ClientBuilder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keycloak/src/main/java/com/zestic/authy/keycloak/exception/KeycloakException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keycloak/src/main/java/com/zestic/authy/keycloak/utils/Security.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keycloak/src/main/java/com/zestic/authy/keycloak/utils/Utils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/zestic/authy/app/config/CORSConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/zestic/authy/app/config/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/zestic/authy/app/controller/ClientController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/zestic/authy/app/controller/RealmController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/zestic/authy/app/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/zestic/authy/app/entity/user/Access.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/zestic/authy/app/entity/user/User.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/zestic/authy/app/service/ClientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/zestic/authy/app/service/RealmService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/zestic/authy/app/service/UserService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keycloak/src/main/java/com/zestic/authy/keycloak/annotation/EnableKeycloak.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keycloak/src/main/java/com/zestic/authy/keycloak/config/KeycloakAutoConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keycloak/src/main/java/com/zestic/authy/keycloak/config/KeycloakProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keycloak/src/main/resources/META-INF/spring.factories" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockers/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dockers/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/keycloak/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak/src/main/java/com/zestic/authy/keycloak/KeycloakApplication.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak/src/main/java/com/zestic/authy/keycloak/utils/Security.java" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak/src/main/java/com/zestic/authy/keycloak/utils/Security.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak/src/test/java/com/zestic/authy/keycloak/KeycloakApplicationTests.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -24,6 +39,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -42,7 +64,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Reference/spring-keycloak-client-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/app/src/main/java/com/zestic/authy/app/config" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -57,6 +79,8 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\GitHub\Zestic\Authy\Source\authy\app\src\main\java\com\zestic\authy\app\config" />
+      <recent name="C:\GitHub\Zestic\Authy\Source\authy\keycloak\src\main\resources" />
       <recent name="C:\GitHub\Zestic\Authy\Source\authy\dockers" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -66,33 +90,35 @@
       <recent name="com.zestic.authy.keycloak" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.zestic.authy.app.service" />
+      <recent name="com.zestic.authy.app.controller" />
+      <recent name="com.zestic.authy.keycloak.config" />
+      <recent name="com.zestic.authy.keycloak.annotation" />
       <recent name="com.zestic.authy.keycloak.utils" />
-      <recent name="com.zestic.authy.keycloak.exception" />
-      <recent name="com.zestic.authy.keycloak.domain" />
     </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
+      <command value="mvn install:install-file" />
       <command value="mvn clean" />
+      <command value="mvn install" />
     </option>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KeycloakApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="keycloak" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zestic.authy.keycloak.KeycloakApplication" />
+    <configuration name="AppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="app" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zestic.authy.app.AppApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -101,8 +127,7 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="6f4b3ea0-70a0-4591-936d-e4d392a5fffa" name="Default Changelist" comment="" />
-      <changelist id="eecc96a7-54e3-4bf1-ba05-5b33bd38fd20" name="Updated" comment="" />
+      <changelist id="725fd97b-bd43-4c05-9114-caf163c1c455" name="Default Changelist" comment="Updated" />
       <created>1642434803983</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
@@ -118,7 +143,9 @@
       <workItem from="1642835696587" duration="1135000" />
       <workItem from="1642836853913" duration="95000" />
       <workItem from="1642836952808" duration="1391000" />
-      <workItem from="1643099505839" duration="7695000" />
+      <workItem from="1643099505839" duration="7720000" />
+      <workItem from="1643177008878" duration="698000" />
+      <workItem from="1643209070500" duration="11823000" />
     </task>
     <task id="LOCAL-00001" summary="Updated">
       <created>1642835945442</created>
@@ -169,7 +196,14 @@
       <option name="project" value="LOCAL" />
       <updated>1643099900094</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Updated">
+      <created>1643132174672</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1643132174672</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
