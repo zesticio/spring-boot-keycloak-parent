@@ -4,6 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
+<<<<<<< Updated upstream
     <list default="true" id="725fd97b-bd43-4c05-9114-caf163c1c455" name="Default Changelist" comment="Updated">
       <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
       <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
@@ -17,6 +18,9 @@
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zestic/authy/app/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zestic/authy/app/controller/ClientController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
+=======
+    <list default="true" id="725fd97b-bd43-4c05-9114-caf163c1c455" name="Default Changelist" comment="" />
+>>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -90,9 +94,15 @@
     </option>
   </component>
   <component name="RunManager">
+<<<<<<< Updated upstream
     <configuration name="AppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="app" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.zestic.authy.app.AppApplication" />
+=======
+    <configuration name="KeycloakApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="keycloak" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zestic.authy.keycloak.KeycloakApplication" />
+>>>>>>> Stashed changes
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
