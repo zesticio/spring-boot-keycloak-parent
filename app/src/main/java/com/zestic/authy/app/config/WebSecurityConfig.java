@@ -1,4 +1,4 @@
-package com.zestic.sniffer.config;
+package com.zestic.authy.app.config;
 
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;

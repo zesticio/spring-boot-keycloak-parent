@@ -1,7 +1,6 @@
 package com.zestic.authy.app.controller;
 
 import com.zestic.authy.app.service.ClientService;
-import com.zestic.authy.app.service.UserService;
 import com.zestic.common.entity.Result;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
