@@ -2,8 +2,6 @@ package com.zestic.authy.keycloak.config;
 
 import com.zestic.authy.keycloak.Client;
 import com.zestic.authy.keycloak.exception.KeycloakException;
-import com.zestic.log.Log;
-import com.zestic.log.LogFactory;
 import org.springframework.beans.BeansException;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.context.ApplicationContext;
@@ -17,7 +15,8 @@ import org.springframework.stereotype.Service;
 @EnableConfigurationProperties(KeycloakProperties.class)
 public class KeycloakAutoConfiguration implements ApplicationContextAware {
 
-    private Log logger = LogFactory.get();
+    private static final org.apache.logging.log4j.Logger logger = org.apache.logging.log4j.LogManager.getLogger(KeycloakAutoConfiguration.class);
+
     private ApplicationContext applicationContext;
     private KeycloakProperties properties;
 

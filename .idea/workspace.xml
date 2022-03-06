@@ -4,23 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-<<<<<<< Updated upstream
-    <list default="true" id="725fd97b-bd43-4c05-9114-caf163c1c455" name="Default Changelist" comment="Updated">
-      <change afterPath="$PROJECT_DIR$/.idea/checkstyle-idea.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25-01-2022_14_01_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25-01-2022_14_01__Default_Changelist_.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25-01-2022_14_05_[Default_Changelist]/shelved.patch" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25-01-2022_14_05__Default_Changelist_.xml" beforeDir="false" />
+    <list default="true" id="3f4d75cb-5e7f-4c2b-b040-2177c6e522c3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/app/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/java/com/zestic/authy/app/config/RetrofitConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/src/main/resources/log4j2.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keycloak/LICENSE" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/test/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/codeStyles/codeStyleConfig.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25-01-2022_23_16_[Default_Changelist]/shelved.patch" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/shelf/Uncommitted_changes_before_Update_at_25-01-2022_23_16__Default_Changelist_.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/uiDesigner.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/LICENSE" beforeDir="false" afterPath="$PROJECT_DIR$/LICENSE" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/app/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/app/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zestic/authy/app/AppApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zestic/authy/app/AppApplication.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zestic/authy/app/config/CORSConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zestic/authy/app/config/CORSConfig.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zestic/authy/app/config/WebSecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zestic/authy/app/config/WebSecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zestic/authy/app/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zestic/authy/app/controller/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zestic/authy/app/service/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zestic/authy/app/service/ClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zestic/authy/app/service/RealmService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zestic/authy/app/service/RealmService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/java/com/zestic/authy/app/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/java/com/zestic/authy/app/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/app/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockers/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/dockers/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dockers/mariadb/my.cnf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak/src/main/java/com/zestic/authy/keycloak/config/KeycloakAutoConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak/src/main/java/com/zestic/authy/keycloak/config/KeycloakAutoConfiguration.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
-=======
-    <list default="true" id="725fd97b-bd43-4c05-9114-caf163c1c455" name="Default Changelist" comment="" />
->>>>>>> Stashed changes
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -29,17 +43,13 @@
   <component name="ComposerSettings">
     <execution />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="ProjectId" id="23pd8Xp75GgmDFSF6QYHNWf3rpg" />
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="f2426499-575c-449c-a486-ba2cdad89f83" />
+  </component>
+  <component name="ProjectId" id="25gzLwezCzGQYJoBfvZFMRYUan9" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
   </component>
@@ -48,12 +58,15 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
-    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/dockers" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -61,48 +74,30 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.sourceCode" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\GitHub\Zestic\Authy\Source\authy\app\src\main\java\com\zestic\authy\app\config" />
-      <recent name="C:\GitHub\Zestic\Authy\Source\authy\keycloak\src\main\resources" />
-      <recent name="C:\GitHub\Zestic\Authy\Source\authy\dockers" />
+      <recent name="C:\GitHub\Zestic\Products\Authy\Source\authy\dockers" />
+      <recent name="C:\GitHub\Zestic\Products\Authy\Source\authy\dockers\apim" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
-      <recent name="C:\GitHub\Zestic\Authy\Source\authy\dockers\nginx" />
-    </key>
-    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
-      <recent name="com.zestic.authy.keycloak" />
+      <recent name="C:\GitHub\Zestic\Products\Authy\Source\authy\dockers\apim\conf" />
+      <recent name="C:\GitHub\Zestic\Products\Authy\Source\authy\dockers" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.zestic.authy.app.service" />
-      <recent name="com.zestic.authy.app.controller" />
-      <recent name="com.zestic.authy.keycloak.config" />
-      <recent name="com.zestic.authy.keycloak.annotation" />
-      <recent name="com.zestic.authy.keycloak.utils" />
+      <recent name="com.zestic.authy.app.config" />
     </key>
   </component>
   <component name="RunAnythingCache">
     <option name="myCommands">
-      <command value="mvn install:install-file" />
       <command value="mvn clean" />
       <command value="mvn install" />
     </option>
   </component>
   <component name="RunManager">
-<<<<<<< Updated upstream
     <configuration name="AppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="app" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.zestic.authy.app.AppApplication" />
-=======
-    <configuration name="KeycloakApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="keycloak" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zestic.authy.keycloak.KeycloakApplication" />
->>>>>>> Stashed changes
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -111,113 +106,17 @@
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="725fd97b-bd43-4c05-9114-caf163c1c455" name="Default Changelist" comment="Updated" />
-      <created>1642434803983</created>
+      <changelist id="3f4d75cb-5e7f-4c2b-b040-2177c6e522c3" name="Default Changelist" comment="" />
+      <created>1645963465720</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1642434803983</updated>
-      <workItem from="1642434805286" duration="8000" />
-      <workItem from="1642434836625" duration="93000" />
-      <workItem from="1642435099651" duration="1368000" />
-      <workItem from="1642493566348" duration="17229000" />
-      <workItem from="1642574552903" duration="13693000" />
-      <workItem from="1642689258087" duration="394000" />
-      <workItem from="1642690994625" duration="598000" />
-      <workItem from="1642744011502" duration="8000" />
-      <workItem from="1642835696587" duration="1135000" />
-      <workItem from="1642836853913" duration="95000" />
-      <workItem from="1642836952808" duration="1391000" />
-      <workItem from="1643099505839" duration="7720000" />
-      <workItem from="1643177008878" duration="698000" />
-      <workItem from="1643209070500" duration="11920000" />
-      <workItem from="1643264073283" duration="4879000" />
-      <workItem from="1643282992627" duration="29000" />
-      <workItem from="1643468589188" duration="515000" />
-      <workItem from="1643555985625" duration="748000" />
-      <workItem from="1643558602085" duration="610000" />
-      <workItem from="1643822646876" duration="843000" />
-      <workItem from="1643980145126" duration="607000" />
-      <workItem from="1644312340184" duration="1468000" />
-      <workItem from="1645815184657" duration="1311000" />
+      <updated>1645963465720</updated>
+      <workItem from="1645963466923" duration="9466000" />
+      <workItem from="1646029873300" duration="7153000" />
+      <workItem from="1646246070666" duration="18000" />
+      <workItem from="1646417628019" duration="7401000" />
+      <workItem from="1646492489250" duration="2355000" />
     </task>
-    <task id="LOCAL-00001" summary="Updated">
-      <created>1642835945442</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1642835945442</updated>
-    </task>
-    <task id="LOCAL-00002" summary="Updated">
-      <created>1642836558499</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1642836558499</updated>
-    </task>
-    <task id="LOCAL-00003" summary="Updated">
-      <created>1642837054696</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1642837054696</updated>
-    </task>
-    <task id="LOCAL-00004" summary="Updated">
-      <created>1642837062572</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1642837062572</updated>
-    </task>
-    <task id="LOCAL-00005" summary="Updated">
-      <created>1642936965200</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1642936965200</updated>
-    </task>
-    <task id="LOCAL-00006" summary="Updated">
-      <created>1643099882849</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1643099882849</updated>
-    </task>
-    <task id="LOCAL-00007" summary="Updated">
-      <created>1643099900094</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1643099900094</updated>
-    </task>
-    <task id="LOCAL-00008" summary="Updated">
-      <created>1643132174672</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1643132174672</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Updated">
-      <created>1643226036921</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1643226036921</updated>
-    </task>
-    <task id="LOCAL-00010" summary="Updated">
-      <created>1643226056876</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1643226056876</updated>
-    </task>
-    <task id="LOCAL-00011" summary="Updated">
-      <created>1643469100089</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1643469100089</updated>
-    </task>
-    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -234,13 +133,5 @@
       </map>
     </option>
     <option name="oldMeFiltersMigrated" value="true" />
-  </component>
-  <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated" />
-  </component>
-  <component name="XSLT-Support.FileAssociations.UIState">
-    <expand />
-    <select />
   </component>
 </project>
