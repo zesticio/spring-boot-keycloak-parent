@@ -1,3 +1,0 @@
-org.springframework.boot.autoconfigure.EnableAutoConfiguration=\
-  com.zestic.sniffer.config.Pcap4JAutoConfiguration,\
-  com.zestic.sniffer.config.ConsumerAutoConfiguration
