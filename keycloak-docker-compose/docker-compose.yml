@@ -24,8 +24,8 @@ services:
       - PROXY_ADDRESS_FORWARDING=true
     ports:
       - "9080:8080"
-    volumes:
-      - /zestic/authy/keycloak:/opt/jboss
+#    volumes:
+#      - /zestic/authy/keycloak:/opt/jboss
     networks:
       - keycloak-internal
       - zestic.external
