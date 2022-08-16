@@ -7,23 +7,23 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="spring-boot-starter-keycloak-app" />
-        <module name="spring-boot-starter-keycloak-api" />
-        <module name="spring-boot-starter-keycloak-test" />
+        <module name="spring-boot-starter-keycloak" />
+        <module name="spring-boot-app" />
+        <module name="spring-boot-test" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
-      <module name="spring-boot-starter-keycloak-api" target="11" />
-      <module name="spring-boot-starter-keycloak-app" target="11" />
-      <module name="spring-boot-starter-keycloak-parent" target="11" />
-      <module name="spring-boot-starter-keycloak-test" target="11" />
+      <module name="spring-boot-app" target="11" />
+      <module name="spring-boot-keycloak-parent" target="11" />
+      <module name="spring-boot-starter-keycloak" target="11" />
+      <module name="spring-boot-test" target="11" />
     </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
-      <module name="spring-boot-starter-keycloak-api" options="-parameters" />
-      <module name="spring-boot-starter-keycloak-app" options="-parameters" />
-      <module name="spring-boot-starter-keycloak-test" options="-parameters" />
+      <module name="spring-boot-app" options="-parameters" />
+      <module name="spring-boot-starter-keycloak" options="-parameters" />
+      <module name="spring-boot-test" options="-parameters" />
     </option>
   </component>
 </project>

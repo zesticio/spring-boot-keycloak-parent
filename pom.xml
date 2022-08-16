@@ -9,9 +9,9 @@
         <version>1.0.0</version>
     </parent>
     <groupId>com.zestic.authy</groupId>
-    <artifactId>spring-boot-starter-keycloak-parent</artifactId>
-    <name>spring-boot-starter-keycloak-parent</name>
-    <description>spring-boot-starter-keycloak-parent</description>
+    <artifactId>spring-boot-keycloak-parent</artifactId>
+    <name>spring-boot-keycloak-parent</name>
+    <description>spring-boot-keycloak-parent</description>
     <version>1.0.0</version>
     <packaging>pom</packaging>
 
@@ -22,9 +22,9 @@
     </properties>
 
     <modules>
-        <module>spring-boot-starter-keycloak-api</module>
-        <module>spring-boot-starter-keycloak-app</module>
-        <module>spring-boot-starter-keycloak-test</module>
+        <module>spring-boot-starter-keycloak</module>
+        <module>spring-boot-app</module>
+        <module>spring-boot-test</module>
     </modules>
 
     <dependencyManagement>
@@ -44,11 +44,11 @@
             <dependency>
                 <groupId>com.zestic</groupId>
                 <artifactId>common</artifactId>
-                <version>${com.zestic.common.version}</version>
+                <version>${com.zestic.tools.common.version}</version>
             </dependency>
             <dependency>
                 <groupId>com.zestic.authy</groupId>
-                <artifactId>spring-boot-starter-keycloak-api</artifactId>
+                <artifactId>spring-boot-starter-keycloak</artifactId>
                 <version>${com.zestic.authy.version}</version>
             </dependency>
         </dependencies>
