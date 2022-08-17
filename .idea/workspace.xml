@@ -182,7 +182,7 @@
       <workItem from="1660317245271" duration="3704000" />
       <workItem from="1660660838095" duration="4263000" />
       <workItem from="1660668815439" duration="2947000" />
-      <workItem from="1660710899726" duration="1503000" />
+      <workItem from="1660710899726" duration="9654000" />
     </task>
     <task id="LOCAL-00001" summary="Updated">
       <created>1646587102743</created>
@@ -268,7 +268,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660711488141</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Moved to keycloak 16.0.0">
+      <created>1660712604252</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1660712604252</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -290,7 +297,8 @@
     <MESSAGE value="Updated" />
     <MESSAGE value="Added docker compose" />
     <MESSAGE value="Removed volume from keycloak configuration" />
-    <option name="LAST_COMMIT_MESSAGE" value="Removed volume from keycloak configuration" />
+    <MESSAGE value="Moved to keycloak 16.0.0" />
+    <option name="LAST_COMMIT_MESSAGE" value="Moved to keycloak 16.0.0" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
