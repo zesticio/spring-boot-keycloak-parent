@@ -2,11 +2,24 @@ version: '3'
 #all port number should be exposed appending 9
 services:
 
+  postgres:
+    image: postgres
+    container_name: authy-postgres
+    restart: always
+    volumes:
+      - /zestic/authy/postgres:/var/lib/postgres
+    environment:
+      POSTGRES_DB: keycloak
+      POSTGRES_USER: keycloak
+      POSTGRES_PASSWORD: keycloakrw
+    networks:
+      - keycloak-internal
+
   keycloak-service:
     container_name: authy-keycloak
     depends_on:
-      - mariadb
-    image: quay.io/keycloak/keycloak:16.0.0
+      - postgres
+    image: quay.io/keycloak/keycloak:17.0.0-legacy
     restart: unless-stopped
     logging:
       options:
@@ -15,37 +28,17 @@ services:
     environment:
       - KEYCLOAK_USER=admin
       - KEYCLOAK_PASSWORD=Pa55w0rd
-      - DB_VENDOR=mariadb
-      - DB_ADDR=mariadb
+      - DB_VENDOR=POSTGRES
+      - DB_ADDR=postgres
       - DB_DATABASE=keycloak
       - DB_USER=keycloak
       - DB_PASSWORD=keycloakrw
-      - KEYCLOAK_LOGLEVEL=ERROR
-      - PROXY_ADDRESS_FORWARDING=true
+      - KEYCLOAK_LOGLEVEL=INFO
     ports:
       - "9080:8080"
     networks:
       - keycloak-internal
       - zestic.external
-
-  mariadb:
-    image: mariadb
-    container_name: authy-mariadb
-    restart: unless-stopped
-    volumes:
-      - /zestic/authy/mysql:/var/lib/mysql
-      - /etc/localtime:/etc/localtime:ro
-    ports:
-      - "9306:3306"
-    environment:
-      MYSQL_ROOT_PASSWORD: MARIADB
-      MYSQL_USER: keycloak
-      MYSQL_PASSWORD: keycloakrw
-      MYSQL_DATABASE: keycloak
-      MYSQL_CHARSET: utf8
-      MYSQL_COLLATION: utf8_general_ci
-    networks:
-      - keycloak-internal
 
 networks:
   keycloak-internal:
