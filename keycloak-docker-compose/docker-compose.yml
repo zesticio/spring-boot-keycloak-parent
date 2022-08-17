@@ -26,8 +26,6 @@ services:
       - KC_METRICS_ENABLED=true
     ports:
       - "9080:8443"
-    volumes:
-      - /zestic/authy/keycloak:/opt/jboss
     networks:
       - keycloak-internal
       - zestic.external
