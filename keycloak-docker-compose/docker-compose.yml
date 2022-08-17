@@ -6,7 +6,7 @@ services:
     container_name: authy-keycloak
     depends_on:
       - mariadb
-    image: quay.io/keycloak/keycloak:latest
+    image: quay.io/keycloak/keycloak:16.0.0
     restart: unless-stopped
     logging:
       options:
@@ -22,10 +22,8 @@ services:
       - DB_PASSWORD=keycloakrw
       - KEYCLOAK_LOGLEVEL=ERROR
       - PROXY_ADDRESS_FORWARDING=true
-      - KC_HEALTH_ENABLED=true
-      - KC_METRICS_ENABLED=true
     ports:
-      - "9080:8443"
+      - "9080:8080"
     networks:
       - keycloak-internal
       - zestic.external
