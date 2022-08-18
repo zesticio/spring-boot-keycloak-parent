@@ -13,7 +13,6 @@ WORKDIR /opt/service
 
 #The RUN instruction will execute any commands in a new layer on top of the current image and commit the results. The resulting committed image will be used for the next step in the Dockerfile.
 #RUN ln -snf /usr/share/zoneinfo/$TIMEZONE /etc/localtime && echo $TIMEZONE > /etc/timezone && dpkg-reconfigure -f noninteractive tzdata
-RUN apk add --no-cache bash curl jq docker
 RUN mkdir -p /opt/service
 RUN mkdir -p /opt/service/config
 RUN mkdir -p /opt/service/dist
