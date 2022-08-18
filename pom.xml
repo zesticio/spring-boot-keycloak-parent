@@ -16,6 +16,7 @@
     <packaging>pom</packaging>
 
     <properties>
+        <spring.boot.admin.version>2.7.3</spring.boot.admin.version>
         <com.zestic.authy.version>1.0.0</com.zestic.authy.version>
         <org.keycloak.bom.version>15.0.0</org.keycloak.bom.version>
         <keycloak.admin.client.version>17.0.0</keycloak.admin.client.version>
