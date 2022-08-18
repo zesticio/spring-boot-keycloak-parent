@@ -5,8 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f4d75cb-5e7f-4c2b-b040-2177c6e522c3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-docker-compose/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +24,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="RECENT_BRANCH_BY_REPOSITORY">
+      <map>
+        <entry key="$PROJECT_DIR$" value="main" />
+      </map>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="GithubDefaultAccount">
@@ -48,7 +52,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/keycloak-docker-compose" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/.github/workflows" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -67,11 +71,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\.github\workflows" />
+      <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent" />
       <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\keycloak-docker-compose" />
       <recent name="C:\GitHub\Zestic\Products\Authy\Source\authy\spring-boot-starter-keycloak-api\src\main\resources" />
       <recent name="C:\GitHub\Zestic\Products\Authy\Source\authy\keycloak\src\main\java\com\zestic\authy\keycloak\business\user" />
-      <recent name="C:\GitHub\Zestic\Products\Authy\Source\authy\keycloak\src\main\java\com\zestic\authy\keycloak\business\scopemapping" />
-      <recent name="C:\GitHub\Zestic\Products\Authy\Source\authy\keycloak\src\main\java\com\zestic\authy\keycloak\business\roles" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\GitHub\Zestic\Products\Authy\Source\authy\dockers\apim\conf" />
@@ -182,7 +186,8 @@
       <workItem from="1660317245271" duration="3704000" />
       <workItem from="1660660838095" duration="4263000" />
       <workItem from="1660668815439" duration="2947000" />
-      <workItem from="1660710899726" duration="9654000" />
+      <workItem from="1660710899726" duration="15172000" />
+      <workItem from="1660840958050" duration="3206000" />
     </task>
     <task id="LOCAL-00001" summary="Updated">
       <created>1646587102743</created>
@@ -275,7 +280,42 @@
       <option name="project" value="LOCAL" />
       <updated>1660712604252</updated>
     </task>
-    <option name="localTasksCounter" value="14" />
+    <task id="LOCAL-00014" summary="Moved to postgres database, in mysql there was primary key exception">
+      <created>1660723669887</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1660723669887</updated>
+    </task>
+    <task id="LOCAL-00015" summary="Moved to postgres database, in mysql there was primary key exception">
+      <created>1660723964356</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1660723964356</updated>
+    </task>
+    <task id="LOCAL-00016" summary="Moved to postgres database, in mysql there was primary key exception">
+      <created>1660842152523</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1660842152523</updated>
+    </task>
+    <task id="LOCAL-00017" summary="Updated">
+      <created>1660842962505</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1660842962505</updated>
+    </task>
+    <task id="LOCAL-00018" summary="Updated">
+      <created>1660844147815</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1660844147815</updated>
+    </task>
+    <option name="localTasksCounter" value="19" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -286,7 +326,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="develop" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -294,11 +346,12 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated" />
     <MESSAGE value="Added docker compose" />
     <MESSAGE value="Removed volume from keycloak configuration" />
     <MESSAGE value="Moved to keycloak 16.0.0" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved to keycloak 16.0.0" />
+    <MESSAGE value="Moved to postgres database, in mysql there was primary key exception" />
+    <MESSAGE value="Updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
