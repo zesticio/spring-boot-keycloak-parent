@@ -5,9 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f4d75cb-5e7f-4c2b-b040-2177c6e522c3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.github/workflows/develop.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/develop.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.github/workflows/main.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/main.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -189,7 +189,7 @@
       <workItem from="1660660838095" duration="4263000" />
       <workItem from="1660668815439" duration="2947000" />
       <workItem from="1660710899726" duration="15172000" />
-      <workItem from="1660840958050" duration="1922000" />
+      <workItem from="1660840958050" duration="3114000" />
     </task>
     <task id="LOCAL-00001" summary="Updated">
       <created>1646587102743</created>
@@ -303,7 +303,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660842152523</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Updated">
+      <created>1660842962505</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1660842962505</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -334,12 +341,12 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="Updated" />
     <MESSAGE value="Added docker compose" />
     <MESSAGE value="Removed volume from keycloak configuration" />
     <MESSAGE value="Moved to keycloak 16.0.0" />
     <MESSAGE value="Moved to postgres database, in mysql there was primary key exception" />
-    <option name="LAST_COMMIT_MESSAGE" value="Moved to postgres database, in mysql there was primary key exception" />
+    <MESSAGE value="Updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
