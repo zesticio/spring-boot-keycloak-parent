@@ -42,7 +42,9 @@ services:
 
   authy:
     container_name: authy-app
-    depends_on: keycloak-service
+    depends_on:
+      - keycloak-service
+      - postgres
     image: zesticsolutions/authy:latest
     restart: unless-stopped
     volumes:
