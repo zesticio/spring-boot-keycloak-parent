@@ -34,7 +34,12 @@ jobs:
         uses: docker/build-push-action@v2
         with:
           context: .
+          file: ./Dockerfile
+          builder: ${{ steps.buildx.outputs.name }}
           push: true
           tags: zesticsolutions/authy:latest, zesticsolutions/authy:${{github.run_number}}
+
+      - name: Image digest
+        run: echo ${{ steps.docker_build.outputs.digest }}
 
 

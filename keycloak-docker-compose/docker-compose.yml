@@ -15,7 +15,7 @@ services:
     networks:
       - keycloak-internal
 
-  keycloak-service:
+  keycloak:
     container_name: authy-keycloak
     depends_on:
       - postgres
@@ -36,6 +36,21 @@ services:
       - KEYCLOAK_LOGLEVEL=INFO
     ports:
       - "9080:8080"
+    networks:
+      - keycloak-internal
+      - zestic.external
+
+  authy:
+    container_name: authy-app
+    depends_on:
+      - keycloak-service
+      - postgres
+    image: zesticsolutions/authy:latest
+    restart: unless-stopped
+    volumes:
+      - /zestic/authy/app:/opt/service
+    ports:
+      - "9090:9090"
     networks:
       - keycloak-internal
       - zestic.external
