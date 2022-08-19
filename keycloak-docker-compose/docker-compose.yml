@@ -40,6 +40,19 @@ services:
       - keycloak-internal
       - zestic.external
 
+  authy:
+    container_name: authy-app
+    depends_on: keycloak-service
+    image: zesticsolutions/authy:latest
+    restart: unless-stopped
+    volumes:
+      - /zestic/authy/app:/opt/service
+    ports:
+      - "9090:9090"
+    networks:
+      - keycloak-internal
+      - zestic.external
+
 networks:
   keycloak-internal:
   zestic.external:
