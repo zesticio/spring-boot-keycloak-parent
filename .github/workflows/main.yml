@@ -27,7 +27,7 @@ jobs:
         uses: madhead/read-java-properties@latest
         id: docker
         with:
-          file: docker.properties
+          file: spring-boot-app/docker.properties
           all: true
 
       - name: Setup Java SDK 11
