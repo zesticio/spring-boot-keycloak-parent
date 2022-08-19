@@ -15,7 +15,7 @@ services:
     networks:
       - keycloak-internal
 
-  keycloak-service:
+  keycloak:
     container_name: authy-keycloak
     depends_on:
       - postgres
