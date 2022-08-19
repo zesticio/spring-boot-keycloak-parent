@@ -17,12 +17,12 @@ RUN mkdir -p /opt/service
 RUN mkdir -p /opt/service/config
 RUN mkdir -p /opt/service/dist
 
-COPY spring-boot-app/target /opt/service/dist
-COPY spring-boot-app/src/main/resources/application.properties /opt/service/config
-COPY spring-boot-app/src/main/resources/banner.txt /opt/service/config
-COPY spring-boot-app/src/main/resources/log4j.properties /opt/service/config
+COPY target/* /opt/service/dist
+COPY src/main/resources/application.properties /opt/service/config
+COPY src/main/resources/banner.txt /opt/service/config
+COPY src/main/resources/log4j.properties /opt/service/config
 
-VOLUME /keycloak
+VOLUME /opt/service
 
 EXPOSE 9090
 ENTRYPOINT ["java", "-jar", "-Djava.library.path=/opt/service/dist", "-Dspring.config.location=/opt/service/config/application.properties", "-Dlog4j.configuration=file:////opt/service/config/log4j.properties", "/opt/service/dist/spring-boot-app-1.0.0.jar"]
