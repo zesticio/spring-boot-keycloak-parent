@@ -1,4 +1,4 @@
-name: Deploy to artifactory
+name: Release - Test, Build & Redeploy
 
 on:
   # Triggers the workflow on push or pull request events but only for dev branch
@@ -9,11 +9,27 @@ on:
       - closed
 
 jobs:
+  test:
+    name: Test - Unit & Integration
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v3
+      - name: Setup Java SDK 11
+        uses: actions/setup-java@v3
+        with:
+          distribution: 'corretto'
+          java-version: '11'
+      - name: Maven Package
+        run: mvn -B --settings settings.xml --file pom.xml clean package -DskipTests
+      - name: Maven Verify
+        run: mvn -B --settings settings.xml --file pom.xml clean verify
+
   deploy:
     if: ${{ github.event.pull_request.merged }}
     runs-on: ubuntu-latest
-    steps:
 
+    steps:
       - name: Generate build number
         id: buildnumber
         uses: einaregilsson/build-number@v3
