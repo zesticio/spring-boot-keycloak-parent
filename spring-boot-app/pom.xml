@@ -11,6 +11,10 @@
     <name>spring-boot-app</name>
     <packaging>jar</packaging>
 
+    <properties>
+        <start-class>com.zestic.authy.app.Application</start-class>
+    </properties>
+
     <dependencies>
         <dependency>
             <groupId>org.springframework.boot</groupId>
@@ -61,6 +65,9 @@
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.7.2</version>
+<!--                <configuration>-->
+<!--                    <mainClass>com.baeldung.DemoApplication</mainClass>-->
+<!--                </configuration>                -->
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>

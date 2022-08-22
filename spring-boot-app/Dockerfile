@@ -17,10 +17,8 @@ RUN mkdir -p /opt/service
 RUN mkdir -p /opt/service/config
 RUN mkdir -p /opt/service/dist
 
-COPY target/* /opt/service/dist
-COPY src/main/resources/application.properties /opt/service/config
-COPY src/main/resources/banner.txt /opt/service/config
-COPY src/main/resources/log4j.properties /opt/service/config
+COPY target/* /opt/service/dist/
+COPY src/main/resources/* /opt/service/config/
 
 VOLUME /opt/service
 
