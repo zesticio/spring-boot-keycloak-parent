@@ -5,13 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f4d75cb-5e7f-4c2b-b040-2177c6e522c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/spring-boot-app/config/application.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-app/config/banner.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-app/config/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-docker-compose/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -208,7 +202,7 @@
       <workItem from="1660840958050" duration="6941000" />
       <workItem from="1660895048379" duration="18420000" />
       <workItem from="1660936147591" duration="2609000" />
-      <workItem from="1661139216173" duration="528000" />
+      <workItem from="1661139216173" duration="1704000" />
     </task>
     <task id="LOCAL-00001" summary="Updated">
       <created>1646587102743</created>
@@ -413,7 +407,14 @@
       <option name="project" value="LOCAL" />
       <updated>1660930566604</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="Updated">
+      <created>1661139764233</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1661139764233</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
