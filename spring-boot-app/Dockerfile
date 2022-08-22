@@ -18,8 +18,8 @@ WORKDIR /opt/service
 #The RUN instruction will execute any commands in a new layer on top of the current image and commit the results. The resulting committed image will be used for the next step in the Dockerfile.
 #RUN ln -snf /usr/share/zoneinfo/$TIMEZONE /etc/localtime && echo $TIMEZONE > /etc/timezone && dpkg-reconfigure -f noninteractive tzdata
 
-COPY target /opt/service/dist/
-COPY config /opt/service/config/
+COPY target /opt/service/dist
+COPY config /opt/service/config
 
 VOLUME /opt/service
 
