@@ -103,17 +103,6 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="AppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spring-boot-app" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.zestic.authy.app.Application" />
@@ -204,7 +193,8 @@
       <workItem from="1660840958050" duration="6941000" />
       <workItem from="1660895048379" duration="18420000" />
       <workItem from="1660936147591" duration="2609000" />
-      <workItem from="1661139216173" duration="12223000" />
+      <workItem from="1661139216173" duration="12656000" />
+      <workItem from="1661226718141" duration="22000" />
     </task>
     <task id="LOCAL-00001" summary="Updated">
       <created>1646587102743</created>
@@ -507,7 +497,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661189818157</updated>
     </task>
-    <option name="localTasksCounter" value="44" />
+    <task id="LOCAL-00044" summary="Updated">
+      <created>1661190165001</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1661190165001</updated>
+    </task>
+    <option name="localTasksCounter" value="45" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

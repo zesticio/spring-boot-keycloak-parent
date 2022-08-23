@@ -48,7 +48,7 @@ services:
     image: zesticsolutions/authy:latest
     restart: unless-stopped
     volumes:
-      - /zestic/authy:/opt/service/config
+      - /zestic/authy/app:/opt/service/config
 #    environment:
 #      JAVA_OPTS: -Dspring.config.location=/zestic/authy/app/application.properties -Dlog4j.configuration=file:////zestic/authy/app/log4j.properties
     ports:
