@@ -17,8 +17,8 @@ services:
 
   keycloak:
     container_name: authy-keycloak
-    depends_on:
-      - postgres
+#     depends_on:
+#       - postgres
     image: quay.io/keycloak/keycloak:17.0.0-legacy
     restart: unless-stopped
     logging:
