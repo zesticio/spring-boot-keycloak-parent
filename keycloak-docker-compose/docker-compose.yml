@@ -26,6 +26,7 @@ services:
     networks:
       - zestic.internal
       - zestic.external
+      - overnet #between host
 
   authy:
     container_name: authy-app
@@ -42,9 +43,13 @@ services:
     networks:
       - zestic.internal
       - zestic.external
+      - overnet #between host
 
 networks:
   zestic.internal:
     external: true
   zestic.external:
     external: true
+  overnet:
+    external: true
+    driver: overlay
