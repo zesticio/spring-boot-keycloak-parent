@@ -26,6 +26,7 @@
         <module>spring-boot-starter-keycloak</module>
         <module>spring-boot-app</module>
         <module>spring-boot-test</module>
+        <module>spring-boot-authorization-client</module>
     </modules>
 
     <dependencyManagement>

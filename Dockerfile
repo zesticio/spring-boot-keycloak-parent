@@ -11,6 +11,7 @@ ARG profile
 RUN mkdir -p /opt/service
 RUN mkdir -p /opt/service/config
 RUN mkdir -p /opt/service/dist
+RUN mkdir -p /opt/service/lib
 
 #The WORKDIR instruction sets the working directory for any RUN, CMD, ENTRYPOINT, COPY and ADD instructions that follow it in the Dockerfile. If the WORKDIR doesn’t exist, it will be created even if it’s not used in any subsequent Dockerfile instruction.
 WORKDIR /opt/service

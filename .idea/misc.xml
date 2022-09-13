@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/spring-boot-starter-keycloak-api/pom.xml" />
+        <option value="$PROJECT_DIR$/spring-boot-authorization-client/pom.xml" />
       </list>
     </option>
   </component>
