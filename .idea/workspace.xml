@@ -4,86 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f4d75cb-5e7f-4c2b-b040-2177c6e522c3" name="Default Changelist" comment="Added overnet network between host">
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="3f4d75cb-5e7f-4c2b-b040-2177c6e522c3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-docker-compose/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/allclasses-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/allclasses-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/allclasses.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/allclasses.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/allpackages-index.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/allpackages-index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/Application.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/Application.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/class-use/Application.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/class-use/Application.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/config/CORSConfig.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/config/CORSConfig.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/config/KeycloakAdminClient.Builder.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/config/KeycloakAdminClient.Builder.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/config/KeycloakAdminClient.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/config/KeycloakAdminClient.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/config/class-use/CORSConfig.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/config/class-use/CORSConfig.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/config/class-use/KeycloakAdminClient.Builder.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/config/class-use/KeycloakAdminClient.Builder.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/config/class-use/KeycloakAdminClient.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/config/class-use/KeycloakAdminClient.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/config/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/config/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/config/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/config/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/config/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/config/package-use.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/constant/KeycloakError.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/constant/KeycloakError.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/constant/class-use/KeycloakError.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/constant/class-use/KeycloakError.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/constant/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/constant/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/constant/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/constant/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/constant/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/constant/package-use.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/controller/ClientController.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/controller/ClientController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/controller/GroupController.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/controller/GroupController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/controller/RoleController.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/controller/RoleController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/controller/UserController.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/controller/UserController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/controller/class-use/ClientController.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/controller/class-use/ClientController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/controller/class-use/GroupController.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/controller/class-use/GroupController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/controller/class-use/RoleController.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/controller/class-use/RoleController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/controller/class-use/UserController.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/controller/class-use/UserController.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/controller/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/controller/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/controller/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/controller/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/controller/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/controller/package-use.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/package-use.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/service/BaseService.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/service/BaseService.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/service/ClientService.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/service/ClientService.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/service/GroupService.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/service/GroupService.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/service/RoleService.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/service/RoleService.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/service/UserService.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/service/UserService.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/service/class-use/BaseService.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/service/class-use/BaseService.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/service/class-use/ClientService.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/service/class-use/ClientService.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/service/class-use/GroupService.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/service/class-use/GroupService.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/service/class-use/RoleService.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/service/class-use/RoleService.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/service/class-use/UserService.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/service/class-use/UserService.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/service/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/service/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/service/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/service/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/service/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/service/package-use.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/validator/UserValidator.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/validator/UserValidator.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/validator/class-use/UserValidator.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/validator/class-use/UserValidator.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/validator/impl/UserValidationImpl.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/validator/impl/UserValidationImpl.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/validator/impl/class-use/UserValidationImpl.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/validator/impl/class-use/UserValidationImpl.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/validator/impl/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/validator/impl/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/validator/impl/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/validator/impl/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/validator/impl/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/validator/impl/package-use.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/validator/package-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/validator/package-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/validator/package-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/validator/package-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/validator/package-use.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/com/zestic/authy/app/validator/package-use.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/constant-values.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/constant-values.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/deprecated-list.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/deprecated-list.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/help-doc.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/help-doc.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/index-all.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/index-all.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/member-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/member-search-index.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/overview-summary.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/overview-summary.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/overview-tree.html" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/overview-tree.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/package-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/package-search-index.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/apidocs/type-search-index.zip" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/apidocs/type-search-index.zip" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/spring-boot-app-1.0.0-javadoc.jar" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/spring-boot-app-1.0.0-javadoc.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/spring-boot-app-1.0.0.jar" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/spring-boot-app-1.0.0.jar" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/spring-boot-app-1.0.0.jar.original" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/spring-boot-app-1.0.0.jar.original" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/surefire-reports/TEST-com.zestic.authy.app.AppApplicationTests.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/surefire-reports/TEST-com.zestic.authy.app.AppApplicationTests.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/surefire-reports/com.zestic.authy.app.AppApplicationTests-output.txt" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/surefire-reports/com.zestic.authy.app.AppApplicationTests-output.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-app/target/surefire-reports/com.zestic.authy.app.AppApplicationTests.txt" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-app/target/surefire-reports/com.zestic.authy.app.AppApplicationTests.txt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -130,7 +53,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Common/spring-boot-common" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -138,9 +61,9 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="project.structure.side.proportion" value="0.29376498" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
   </component>
@@ -304,14 +227,9 @@
       <workItem from="1662395061975" duration="677000" />
       <workItem from="1662441842757" duration="4115000" />
       <workItem from="1662993782783" duration="643000" />
-      <workItem from="1663078872082" duration="3833000" />
-    </task>
-    <task id="LOCAL-00001" summary="Updated">
-      <created>1646587102743</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1646587102743</updated>
+      <workItem from="1663078872082" duration="3939000" />
+      <workItem from="1663162325439" duration="1422000" />
+      <workItem from="1663169457661" duration="148000" />
     </task>
     <task id="LOCAL-00002" summary="Updated">
       <created>1646587115687</created>
@@ -649,7 +567,14 @@
       <option name="project" value="LOCAL" />
       <updated>1661524054899</updated>
     </task>
-    <option name="localTasksCounter" value="50" />
+    <task id="LOCAL-00050" summary="Updated">
+      <created>1663089729853</created>
+      <option name="number" value="00050" />
+      <option name="presentableId" value="LOCAL-00050" />
+      <option name="project" value="LOCAL" />
+      <updated>1663089729853</updated>
+    </task>
+    <option name="localTasksCounter" value="51" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -684,9 +609,9 @@
     <MESSAGE value="Removed volume from keycloak configuration" />
     <MESSAGE value="Moved to keycloak 16.0.0" />
     <MESSAGE value="Moved to postgres database, in mysql there was primary key exception" />
-    <MESSAGE value="Updated" />
     <MESSAGE value="Added overnet network between host" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added overnet network between host" />
+    <MESSAGE value="Updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -2,6 +2,19 @@ version: '3.4'
 #all port number should be exposed appending 9
 services:
 
+  postgres:
+    image: postgres
+    container_name: authy-postgres
+    restart: always
+    volumes:
+      - /zestic/authy/postgres:/var/lib/postgres
+    environment:
+      POSTGRES_DB: keycloak
+      POSTGRES_USER: keycloak
+      POSTGRES_PASSWORD: keycloakrw
+    networks:
+      - keycloak-internal
+
   keycloak:
     container_name: authy-keycloak
     image: quay.io/keycloak/keycloak:17.0.0-legacy
@@ -25,8 +38,6 @@ services:
       - "9080:8080"
     networks:
       - zestic.internal
-      - zestic.external
-      - overnet #between host
 
   authy:
     container_name: authy-app
@@ -36,8 +47,6 @@ services:
     restart: unless-stopped
     volumes:
       - /zestic/authy/app:/opt/service/config
-    #    environment:
-    #      JAVA_OPTS: -Dspring.config.location=/zestic/authy/app/application.properties -Dlog4j.configuration=file:////zestic/authy/app/log4j.properties
     ports:
       - "9090:9090"
     networks:
