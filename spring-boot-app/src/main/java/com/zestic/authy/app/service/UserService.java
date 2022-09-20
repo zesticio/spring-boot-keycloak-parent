@@ -1,17 +1,16 @@
 package com.zestic.authy.app.service;
 
-import com.zestic.authy.keycloak.entity.User;
-import com.zestic.common.entity.Result;
-import com.zestic.common.utils.HTTPErrorCodes;
-import org.keycloak.adapters.springboot.KeycloakSpringBootProperties;
+import com.zestic.authy.app.config.KeycloakManager;
+import com.zestic.authy.app.config.KeycloakProperties;
+import com.zestic.springboot.common.entity.Result;
+import com.zestic.springboot.common.util.HTTPErrorCodes;
 import org.keycloak.admin.client.Keycloak;
-import org.keycloak.admin.client.resource.GroupResource;
 import org.keycloak.admin.client.resource.UserResource;
 import org.keycloak.admin.client.resource.UsersResource;
 import org.keycloak.representations.idm.CredentialRepresentation;
-import org.keycloak.representations.idm.GroupRepresentation;
 import org.keycloak.representations.idm.UserRepresentation;
 import org.springframework.stereotype.Service;
+import com.zestic.authy.keycloak.api.entity.User;
 
 import javax.ws.rs.core.Response;
 import java.util.*;
@@ -21,13 +20,17 @@ public class UserService extends BaseService {
 
     private static final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(UserService.class);
 
-    public UserService(KeycloakSpringBootProperties properties) {
-        super(properties);
+    protected final KeycloakProperties properties;
+    protected final KeycloakManager manager;
+
+    public UserService(KeycloakProperties properties, KeycloakManager manager) {
+        this.properties = properties;
+        this.manager = manager;
     }
 
     public Result find(Optional<String> name) {
         Result<List<UserRepresentation>> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
-        keycloak = getKeycloakInstance();
+        Keycloak keycloak = this.manager.getKeycloak();
         List<UserRepresentation> list = null;
         if (!name.isPresent())
             list = keycloak.realm(properties.getRealm()).users().list();
@@ -39,7 +42,6 @@ public class UserService extends BaseService {
 
     public Result findById(String id) {
         Result<UserRepresentation> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
-        Keycloak keycloak = getKeycloakInstance();
         UserResource user = keycloak.realm(properties.getRealm()).users().get(id);
         result.setData(user.toRepresentation());
         return result;
@@ -47,8 +49,6 @@ public class UserService extends BaseService {
 
     public Result create(User user) {
         Result<User> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
-
-        keycloak = getKeycloakInstance();
 
         UserRepresentation ur = new UserRepresentation();
         ur.setEnabled(true);
@@ -75,7 +75,6 @@ public class UserService extends BaseService {
 
     public Result update(String id, Optional<String> group, Optional<String> role) {
         Result<User> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
-        keycloak = getKeycloakInstance();
         if (group.isPresent()) {
             keycloak.realm(properties.getRealm())
                     .users()
@@ -92,7 +91,6 @@ public class UserService extends BaseService {
 
     public Result resetPassword(String id) {
         Result<User> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
-        keycloak = getKeycloakInstance();
         final UserResource userResource = keycloak.realm(properties.getRealm()).users().get(id);
         UserRepresentation userRepresentation = userResource.toRepresentation();
 
@@ -108,14 +106,12 @@ public class UserService extends BaseService {
 
     public Result logout(String id) {
         Result<User> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
-        keycloak = getKeycloakInstance();
         keycloak.realm(properties.getRealm()).users().get(id).logout();
         return result;
     }
 
     public Result assignRole(String id) {
         Result<User> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
-        keycloak = getKeycloakInstance();
         return result;
     }
 }

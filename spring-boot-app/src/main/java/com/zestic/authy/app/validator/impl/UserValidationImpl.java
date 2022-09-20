@@ -1,7 +1,7 @@
 package com.zestic.authy.app.validator.impl;
 
 import com.zestic.authy.app.validator.UserValidator;
-import com.zestic.authy.keycloak.entity.User;
+import com.zestic.authy.keycloak.api.entity.User;
 
 import javax.validation.ConstraintValidator;
 import javax.validation.ConstraintValidatorContext;

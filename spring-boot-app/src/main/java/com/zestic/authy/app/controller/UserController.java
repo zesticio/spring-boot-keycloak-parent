@@ -2,15 +2,14 @@ package com.zestic.authy.app.controller;
 
 import com.zestic.authy.app.service.UserService;
 import com.zestic.authy.app.validator.UserValidator;
-import com.zestic.authy.keycloak.entity.User;
-import com.zestic.common.entity.Result;
+import com.zestic.springboot.common.entity.Result;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-
+import com.zestic.authy.keycloak.api.entity.User;
 import javax.annotation.security.RolesAllowed;
 import javax.ws.rs.QueryParam;
 import java.util.Optional;

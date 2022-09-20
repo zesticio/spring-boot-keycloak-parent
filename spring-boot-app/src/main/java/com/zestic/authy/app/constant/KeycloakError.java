@@ -1,12 +1,14 @@
 package com.zestic.authy.app.constant;
 
+import com.zestic.springboot.common.exception.ApplicationError;
+
 import java.util.HashMap;
 import java.util.Map;
 
 /**
  * @author deebendukumar
  */
-public enum KeycloakError {
+public enum KeycloakError implements ApplicationError {
 
     KEYCLOAK_NOT_ENABLED(0x0001, "Keycloak not enabled, Please annotate with @EnableKeycloak"),
     APPLICATION_EDI_X12(0x0001, "Application EDI-X12"),
@@ -21,14 +23,6 @@ public enum KeycloakError {
     APPLICATION_XML(0x0001, "Application xml"),
     APPLICATION_ZIP(0x0001, "Application Zip"),
     APPLICATION_X_WWW_FORM_URLENCODED(0x0001, "Application x-www-form-urlencoded");
-
-    private static final Map<Integer, KeycloakError> LOOKUP = new HashMap<>();
-
-    static {
-        for (final KeycloakError enumeration : KeycloakError.values()) {
-            LOOKUP.put(enumeration.getCode(), enumeration);
-        }
-    }
 
     private final Integer code;
     private final String message;

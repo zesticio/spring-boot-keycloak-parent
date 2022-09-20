@@ -1,15 +1,19 @@
-package com.zestic.authy.keycloak.entity;
+package com.zestic.authy.keycloak.api.entity;
 
-import com.zestic.common.entity.Entity;
+import com.zestic.springboot.common.entity.Entity;
+import lombok.AllArgsConstructor;
 import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.List;
 import java.util.Map;
 
 @Data
-public class User extends Entity {
+@NoArgsConstructor
+@AllArgsConstructor
+public class User extends Entity<String, User> {
 
-    private String userId;
+    private String id;
     private String username;
     private String firstName;
     private String lastName;

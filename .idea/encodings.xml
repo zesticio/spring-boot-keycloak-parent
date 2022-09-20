@@ -3,6 +3,7 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$/spring-boot-app/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-authorization-client/src/main/java" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/spring-boot-keycloak-api/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-starter-keycloak/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/spring-boot-test/src/main/java" charset="UTF-8" />
   </component>

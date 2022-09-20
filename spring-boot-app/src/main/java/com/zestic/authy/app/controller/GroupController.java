@@ -1,7 +1,7 @@
 package com.zestic.authy.app.controller;
 
 import com.zestic.authy.app.service.RoleService;
-import com.zestic.common.entity.Result;
+import com.zestic.springboot.common.entity.Result;
 import io.swagger.annotations.Api;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.http.HttpStatus;

@@ -1,28 +1,37 @@
 package com.zestic.authy.app.service;
 
-import com.zestic.common.entity.Result;
-import com.zestic.common.utils.HTTPErrorCodes;
-import org.keycloak.adapters.springboot.KeycloakSpringBootProperties;
+import com.zestic.authy.app.config.KeycloakManager;
+import com.zestic.authy.app.config.KeycloakProperties;
+import com.zestic.springboot.common.entity.Result;
+import com.zestic.springboot.common.util.HTTPErrorCodes;
+import org.keycloak.admin.client.Keycloak;
+import org.keycloak.admin.client.resource.ClientsResource;
 import org.keycloak.representations.idm.ClientRepresentation;
-import org.keycloak.representations.idm.GroupRepresentation;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class ClientService extends BaseService {
+public class ClientService {
 
     private static final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(ClientService.class);
 
-    public ClientService(KeycloakSpringBootProperties properties) {
-        super(properties);
+    protected final KeycloakProperties properties;
+    protected final KeycloakManager manager;
+
+    public ClientService(KeycloakProperties properties, KeycloakManager manager) {
+        this.properties = properties;
+        this.manager = manager;
     }
 
     public Result find() {
         Result<List<ClientRepresentation>> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
-        keycloak = getKeycloakInstance();
-        List<ClientRepresentation> list = keycloak.realm(properties.getRealm()).clients().findAll();
-        result.setData(list);
+        Keycloak keycloak = this.manager.getKeycloak();
+        ClientsResource resource = keycloak.realm(properties.getRealm()).clients();
+        if (resource != null) {
+//            List<ClientRepresentation> list = resource.findAll();
+            result.setData(resource.findAll());
+        }
         return result;
     }
 }

@@ -1,6 +1,6 @@
 package com.zestic.authy.keycloak.security;
 
-import com.zestic.authy.keycloak.entity.User;
+import com.zestic.authy.keycloak.api.entity.User;
 import org.keycloak.KeycloakPrincipal;
 import org.keycloak.adapters.RefreshableKeycloakSecurityContext;
 import org.springframework.context.annotation.Bean;
@@ -27,7 +27,7 @@ public class CurrentUserProvider {
         String email = principal.getKeycloakSecurityContext().getToken().getEmail();
         Collection<SimpleGrantedAuthority> authorities = (Collection<SimpleGrantedAuthority>) SecurityContextHolder.getContext().getAuthentication().getAuthorities();
 
-        user.setUserId(userId);
+        user.setId(userId);
         user.setUsername(username);
         user.setEmail(email);
         return user;

@@ -1,8 +1,10 @@
 package com.zestic.authy.app.service;
 
-import com.zestic.common.entity.Result;
-import com.zestic.common.utils.HTTPErrorCodes;
-import org.keycloak.adapters.springboot.KeycloakSpringBootProperties;
+import com.zestic.authy.app.config.KeycloakManager;
+import com.zestic.authy.app.config.KeycloakProperties;
+import com.zestic.springboot.common.entity.Result;
+import com.zestic.springboot.common.util.HTTPErrorCodes;
+import org.keycloak.admin.client.Keycloak;
 import org.keycloak.representations.idm.RoleRepresentation;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
@@ -14,18 +16,17 @@ public class RoleService extends BaseService {
 
     private static final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(RoleService.class);
 
-    @Value("${spring.keycloak.username}")
-    private String username;
-    @Value("${spring.keycloak.password}")
-    private String password;
+    protected final KeycloakProperties properties;
+    protected final KeycloakManager manager;
 
-    public RoleService(KeycloakSpringBootProperties properties) {
-        super(properties);
+    public RoleService(KeycloakProperties properties, KeycloakManager manager) {
+        this.properties = properties;
+        this.manager = manager;
     }
 
     public Result find() {
         Result<List<RoleRepresentation>> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
-        keycloak = getKeycloakInstance();
+        Keycloak keycloak = this.manager.getKeycloak();
         List<RoleRepresentation> list = keycloak.realm(properties.getRealm()).roles().list();
         result.setData(list);
         return result;
@@ -33,10 +34,8 @@ public class RoleService extends BaseService {
 
     public Result findByName(final String name) {
         Result<RoleRepresentation> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
-        keycloak = getKeycloakInstance();
         RoleRepresentation role = keycloak.realm(properties.getRealm()).roles().get(name).toRepresentation();
         result.setData(role);
         return result;
     }
-
 }

@@ -1,12 +1,89 @@
-# spring-boot-keycloak-parent
-Identity and access management for Enterprise
-This application is to administrate users based on a central KEYCLOAK server. 
+[comment]: https://developers.redhat.com/blog/2020/11/24/authentication-and-authorization-using-the-keycloak-rest-api#
 
-Step 1: Download and install keycloak
-####https://www.youtube.com/watch?v=HOwoNMoQkmw
-Create initial admin user
-Username - Admin
-Password - admin
+# Authentication and authorization using the Keycloak
+Lets understand the difference between **authentication** and **authorization**, authentication means _who you are_ while authorization means _what can you do_, with each approach using separate methods for validation. For example authentication uses the user management and login form, and authorization uses role-based access control (RBAC) or an access control list (ACL). 
+
+![ecosystem](ecosystem.png)
+
+###Download and install keycloak
+[comment]: (https://www.youtube.com/watch?v=HOwoNMoQkmw)
+Default admin credentials 
+* Username - Admin
+* Password - Pa55w0rd
+
+###Create new realm
+Create a new Keycloak Realm, using the Add realm dialog box. Name the realm _zestic_, set Enabled to ON, and click Create.
+
+###Create realm roles
+Next, go to the Roles page and make sure the Realm Roles tab is selected, create below roles
+* admin
+* customer
+* user
+
+###Create clients
+Then, using the Clients page, click Create to add following client
+* gateway
+  * Client ID: gateway
+  * Enabled: ON
+  * Access Type: confidential
+  * Standard Flow Enabled: ON
+  * Implicit Flow Enabled: ON
+  * Service Account Enabled: ON
+  * Authorization Enabled: ON
+  * Valid Redirect URI: http://<ipaddress:port>/login/oauth2/code/gateway
+  * Backchannel Logout Revoke Offline: ON    
+* admin
+  * Client ID: jakarta-school
+  * Enabled: ON
+  * Consent Required: OFF
+  * Client Protocol: openid-connect
+  * Access Type: confidential
+  * Standard Flow Enabled: ON
+  * Impact Flow Enabled: OFF
+  * Direct Access Grants Enabled: ON
+  * At the bottom of the same page, on the Authentication Flow Overrides part
+    * Browser Flow: browser
+    * Direct Grant Flow: direct grant
+  * Go to the Roles tab, click Add Role,
+    * create
+    * view
+* customer
+  * Client ID: jakarta-school
+  * Enabled: ON
+  * Consent Required: OFF
+  * Client Protocol: openid-connect
+  * Access Type: confidential
+  * Standard Flow Enabled: ON
+  * Impact Flow Enabled: OFF
+  * Direct Access Grants Enabled: ON
+* user
+  * Client ID: jakarta-school
+  * Enabled: ON
+  * Consent Required: OFF
+  * Client Protocol: openid-connect
+  * Access Type: confidential
+  * Standard Flow Enabled: ON
+  * Impact Flow Enabled: OFF
+  * Direct Access Grants Enabled: ON
+* supplier  
+  * Client ID: jakarta-school
+  * Enabled: ON
+  * Consent Required: OFF
+  * Client Protocol: openid-connect
+  * Access Type: confidential
+  * Standard Flow Enabled: ON
+  * Impact Flow Enabled: OFF
+  * Direct Access Grants Enabled: ON
+* delivery
+  * Client ID: jakarta-school
+  * Enabled: ON
+  * Consent Required: OFF
+  * Client Protocol: openid-connect
+  * Access Type: confidential
+  * Standard Flow Enabled: ON
+  * Impact Flow Enabled: OFF
+  * Direct Access Grants Enabled: ON
+
 
 ##Preconditions
 ### Keycloak installation and configuration
