@@ -1,9 +1,0 @@
-com.zestic.authy.app
-com.zestic.authy.app.boot
-com.zestic.authy.app.config
-com.zestic.authy.app.constant
-com.zestic.authy.app.controller
-com.zestic.authy.app.providers
-com.zestic.authy.app.service
-com.zestic.authy.app.validator
-com.zestic.authy.app.validator.impl

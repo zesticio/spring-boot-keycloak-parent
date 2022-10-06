@@ -4,11 +4,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.zestic</groupId>
-        <artifactId>parent</artifactId>
-        <version>1.0.0</version>
+        <groupId>in.zestic</groupId>
+        <artifactId>spring-boot-parent</artifactId>
+        <version>1.0.1</version>
     </parent>
-    <groupId>com.zestic.authy</groupId>
+    <groupId>in.zestic.authy</groupId>
     <artifactId>spring-boot-keycloak-parent</artifactId>
     <name>spring-boot-keycloak-parent</name>
     <description>spring-boot-keycloak-parent</description>
@@ -17,17 +17,18 @@
 
     <properties>
         <spring.boot.admin.version>2.7.3</spring.boot.admin.version>
-        <com.zestic.authy.version>1.0.0</com.zestic.authy.version>
+        <in.zestic.common.version>1.0.0</in.zestic.common.version>
         <org.keycloak.bom.version>15.0.0</org.keycloak.bom.version>
         <keycloak.admin.client.version>17.0.0</keycloak.admin.client.version>
     </properties>
 
     <modules>
         <module>spring-boot-starter-keycloak</module>
-        <module>spring-boot-app</module>
-        <module>spring-boot-test</module>
         <module>spring-boot-keycloak-api</module>
-        <module>spring-boot-authorization-client</module>
+        <module>spring-boot-keycloak-app</module>
+        <module>spring-boot-keycloak-authorization-client</module>
+        <module>spring-boot-keycloak-bom</module>
+        <module>spring-boot-keycloak-test</module>
     </modules>
 
     <dependencyManagement>
@@ -45,16 +46,23 @@
                 <version>${keycloak.admin.client.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.zestic.authy</groupId>
-                <artifactId>spring-boot-starter-keycloak</artifactId>
-                <version>${com.zestic.authy.version}</version>
+                <groupId>org.keycloak</groupId>
+                <artifactId>keycloak-spring-boot-starter</artifactId>
+                <version>${keycloak.admin.client.version}</version>
             </dependency>
             <dependency>
-                <groupId>com.zestic.authy</groupId>
-                <artifactId>spring-boot-keycloak-api</artifactId>
-                <version>${com.zestic.authy.version}</version>
+                <groupId>org.keycloak</groupId>
+                <artifactId>keycloak-spring-security-adapter</artifactId>
+                <version>${keycloak.admin.client.version}</version>
             </dependency>
 
+            <dependency>
+                <groupId>in.zestic.springboot.common</groupId>
+                <artifactId>spring-boot-common-bom</artifactId>
+                <version>${in.zestic.common.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
         </dependencies>
     </dependencyManagement>
 
@@ -66,11 +74,6 @@
         <dependency>
             <groupId>io.springfox</groupId>
             <artifactId>springfox-swagger-ui</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>com.zestic.springboot.common</groupId>
-            <artifactId>spring-boot-starter-common</artifactId>
         </dependency>
 
         <dependency>
