@@ -1,9 +1,7 @@
 package in.zestic.authy.app.controller;
 
 import in.zestic.authy.app.service.RoleService;
-import in.zestic.springboot.common.entity.Result;
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
+import in.zestic.common.entity.Result;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
@@ -17,7 +15,6 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping(value = "/groups", produces = {MediaType.APPLICATION_JSON_VALUE})
-@Api(value = "", description = "", tags = {"groups"})
 public class GroupController {
 
     private RoleService service;
@@ -32,7 +29,6 @@ public class GroupController {
      * @return
      */
     @GetMapping(path = "")
-    @ApiOperation(value = "", notes = "")
     @RolesAllowed({"ROLE_ADMIN"})
     public ResponseEntity<Result> find(@QueryParam("name") Optional<String> name) {
         Result response;

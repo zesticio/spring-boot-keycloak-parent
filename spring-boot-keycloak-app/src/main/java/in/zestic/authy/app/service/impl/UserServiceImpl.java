@@ -1,16 +1,18 @@
-package in.zestic.authy.app.service;
+package in.zestic.authy.app.service.impl;
 
-import in.zestic.authy.app.config.KeycloakManager;
 import in.zestic.authy.app.config.KeycloakProperties;
-import in.zestic.springboot.common.entity.Result;
-import in.zestic.springboot.common.util.HTTPErrorCodes;
-import org.keycloak.admin.client.Keycloak;
+import in.zestic.authy.app.service.BaseService;
+import in.zestic.authy.app.service.UserService;
+import in.zestic.authy.keycloak.api.entity.User;
+import in.zestic.common.entity.Result;
+import in.zestic.common.util.HTTPErrorCodes;
 import org.keycloak.admin.client.resource.UserResource;
 import org.keycloak.admin.client.resource.UsersResource;
 import org.keycloak.representations.idm.CredentialRepresentation;
+import org.keycloak.representations.idm.GroupRepresentation;
+import org.keycloak.representations.idm.RoleRepresentation;
 import org.keycloak.representations.idm.UserRepresentation;
 import org.springframework.stereotype.Service;
-import in.zestic.authy.keycloak.api.entity.User;
 
 import javax.ws.rs.core.Response;
 import java.util.*;
@@ -21,22 +23,20 @@ public class UserServiceImpl extends BaseService implements UserService {
     private static final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(UserServiceImpl.class);
 
     protected final KeycloakProperties properties;
-    protected final KeycloakManager manager;
 
-    public UserServiceImpl(KeycloakProperties properties, KeycloakManager manager) {
+    public UserServiceImpl(KeycloakProperties properties) {
         this.properties = properties;
-        this.manager = manager;
     }
 
     public Result find(Optional<String> name) {
         Result<List<UserRepresentation>> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
-        Keycloak keycloak = this.manager.getKeycloak();
-        List<UserRepresentation> list = null;
-        if (!name.isPresent())
-            list = keycloak.realm(properties.getRealm()).users().list();
-        else
-            list = keycloak.realm(properties.getRealm()).users().search(name.get());
-        result.setData(list);
+//        Keycloak keycloak = this.session.getKeycloak();
+//        List<UserRepresentation> list = null;
+//        if (!name.isPresent())
+//            list = keycloak.realm(properties.getRealm()).users().list();
+//        else
+//            list = keycloak.realm(properties.getRealm()).users().search(name.get());
+//        result.setData(list);
         return result;
     }
 
@@ -89,6 +89,11 @@ public class UserServiceImpl extends BaseService implements UserService {
         return result;
     }
 
+    /**
+     * Set up a new password for the user.
+     * @param id
+     * @return
+     */
     public Result resetPassword(String id) {
         Result<User> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
         final UserResource userResource = keycloak.realm(properties.getRealm()).users().get(id);
@@ -104,6 +109,11 @@ public class UserServiceImpl extends BaseService implements UserService {
         return result;
     }
 
+    /**
+     * Remove all user sessions associated with the user Also send notification to all clients that have an admin URL to invalidate the sessions for the particular user.
+     * @param id
+     * @return
+     */
     public Result logout(String id) {
         Result<User> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
         keycloak.realm(properties.getRealm()).users().get(id).logout();
@@ -112,6 +122,39 @@ public class UserServiceImpl extends BaseService implements UserService {
 
     public Result assignRole(String id) {
         Result<User> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
+        return result;
+    }
+
+    public Result count() {
+        Result<List<RoleRepresentation>> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
+        return result;
+    }
+
+    public Result profile() {
+        Result<List<RoleRepresentation>> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
+        return result;
+    }
+
+    public Result delete() {
+        Result<List<GroupRepresentation>> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
+        return result;
+    }
+
+    /**
+     * Impersonate the user
+     * @return
+     */
+    public Result impersonate() {
+        Result<List<GroupRepresentation>> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
+        return result;
+    }
+
+    /**
+     * Send an email-verification email to the user An email contains a link the user can click to verify their email address.
+     * @return
+     */
+    public Result sendVerifyEmail() {
+        Result<List<GroupRepresentation>> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
         return result;
     }
 }

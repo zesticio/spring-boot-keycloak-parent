@@ -1,13 +1,13 @@
 package in.zestic.authy.app.controller;
 
 import in.zestic.authy.app.service.RoleService;
-import in.zestic.springboot.common.entity.Result;
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
+import in.zestic.common.entity.Result;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.*;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import javax.annotation.security.RolesAllowed;
 import javax.ws.rs.QueryParam;
@@ -15,7 +15,6 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping(value = "/roles", produces = {MediaType.APPLICATION_JSON_VALUE})
-@Api(value = "", description = "", tags = {"roles"})
 public class RoleController {
 
     private RoleService service;
@@ -30,7 +29,6 @@ public class RoleController {
      * @return
      */
     @GetMapping(path = "")
-    @ApiOperation(value = "", notes = "")
     @RolesAllowed({"ROLE_ADMIN"})
     public ResponseEntity<Result> find(@QueryParam("name") Optional<String> name) {
         Result response;

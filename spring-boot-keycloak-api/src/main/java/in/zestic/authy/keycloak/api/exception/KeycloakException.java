@@ -16,25 +16,18 @@
  * limitations under the License.
  */
 
-package in.zestic.authy.keycloak.annotation;
+package in.zestic.authy.keycloak.api.exception;
 
-import in.zestic.authy.keycloak.config.KeycloakSecurityConfiguration;
-import org.springframework.context.annotation.Import;
+import in.zestic.common.exception.ApplicationError;
+import in.zestic.common.exception.ApplicationException;
 
-import java.lang.annotation.*;
+public class KeycloakException extends ApplicationException {
 
-/**
- * @author deebendukumar
- */
-@Documented
-@Target(ElementType.TYPE)
-@Retention(RetentionPolicy.RUNTIME)
-@Import(value = {KeycloakSecurityConfiguration.class})
-public @interface EnableKeycloakAuthentication {
+    public KeycloakException(ApplicationError errorType) {
+        super(errorType);
+    }
 
-    String[] value() default {};
-
-    String[] basePackages() default {};
-
-    Class<?>[] basePackageClasses() default {};
+    public KeycloakException(ApplicationError errorType, String message) {
+        super(errorType, message);
+    }
 }

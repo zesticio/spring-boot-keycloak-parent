@@ -1,9 +1,9 @@
 package in.zestic.authy.app.service;
 
 import in.zestic.authy.keycloak.api.entity.User;
-import in.zestic.springboot.common.entity.Result;
+import in.zestic.common.entity.Result;
 
-import java.util.*;
+import java.util.Optional;
 
 public interface UserService {
 

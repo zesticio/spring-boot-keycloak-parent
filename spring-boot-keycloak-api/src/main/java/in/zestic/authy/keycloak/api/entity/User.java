@@ -1,6 +1,6 @@
 package in.zestic.authy.keycloak.api.entity;
 
-import in.zestic.springboot.common.entity.Entity;
+import in.zestic.common.entity.Entity;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.NoArgsConstructor;

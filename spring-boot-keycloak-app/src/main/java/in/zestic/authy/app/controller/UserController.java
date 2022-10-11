@@ -1,22 +1,20 @@
 package in.zestic.authy.app.controller;
 
-import in.zestic.authy.app.service.UserServiceImpl;
+import in.zestic.authy.app.service.impl.UserServiceImpl;
 import in.zestic.authy.app.validator.UserValidator;
-import in.zestic.springboot.common.entity.Result;
-import io.swagger.annotations.Api;
-import io.swagger.annotations.ApiOperation;
+import in.zestic.authy.keycloak.api.entity.User;
+import in.zestic.common.entity.Result;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
-import in.zestic.authy.keycloak.api.entity.User;
+
 import javax.annotation.security.RolesAllowed;
 import javax.ws.rs.QueryParam;
 import java.util.Optional;
 
 @RestController
 @RequestMapping(value = "/users", produces = {MediaType.APPLICATION_JSON_VALUE})
-@Api(value = "", description = "", tags = {"Users"})
 public class UserController {
 
     private UserServiceImpl service;
@@ -31,7 +29,6 @@ public class UserController {
      * @return
      */
     @GetMapping(path = "")
-    @ApiOperation(value = "", notes = "")
     @RolesAllowed({"ROLE_ADMIN"})
     public ResponseEntity<Result> find(@QueryParam("name") Optional<String> name) {
         Result response = service.find(name);
@@ -45,7 +42,6 @@ public class UserController {
      * @return
      */
     @GetMapping(path = "/{id}")
-    @ApiOperation(value = "", notes = "")
     @RolesAllowed({"ROLE_ADMIN"})
     public ResponseEntity<Result> findById(@PathVariable(value = "id") String id) {
         Result response = service.findById(id);
@@ -58,7 +54,6 @@ public class UserController {
      * @return
      */
     @PostMapping(path = "")
-    @ApiOperation(value = "", notes = "")
     @RolesAllowed({"ROLE_ADMIN"})
     public ResponseEntity<Result> create(@UserValidator @RequestBody User user) {
         Result response = service.create(user);
@@ -72,7 +67,6 @@ public class UserController {
      * @return
      */
     @PutMapping(path = "/{id}")
-    @ApiOperation(value = "", notes = "")
     @RolesAllowed({"ROLE_ADMIN"})
     public ResponseEntity<Result> update(@PathVariable(value = "id") String id,
                                          @QueryParam("group") Optional<String> group,
@@ -82,7 +76,6 @@ public class UserController {
     }
 
     @PutMapping(path = "/{id}/reset_password")
-    @ApiOperation(value = "", notes = "")
     @RolesAllowed({"ROLE_ADMIN"})
     public ResponseEntity<Result> resetPassword(@PathVariable(value = "id") String id) {
         Result response = service.resetPassword(id);
@@ -90,7 +83,6 @@ public class UserController {
     }
 
     @GetMapping(path = "/{id}/logout")
-    @ApiOperation(value = "", notes = "")
     public ResponseEntity<Result> logout(@PathVariable(value = "id") String id) {
         Result response = service.logout(id);
         return new ResponseEntity<Result>(response, HttpStatus.valueOf(response.getCode()));

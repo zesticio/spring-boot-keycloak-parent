@@ -1,6 +1,7 @@
-package in.zestic.authy.app.service;
+package in.zestic.authy.app.service.impl;
 
 import in.zestic.authy.app.config.KeycloakProperties;
+import in.zestic.authy.app.service.BaseService;
 import in.zestic.common.entity.Result;
 import in.zestic.common.util.HTTPErrorCodes;
 import org.keycloak.representations.idm.RoleRepresentation;
@@ -19,11 +20,13 @@ public class RoleService extends BaseService {
         this.properties = properties;
     }
 
+    public Result create() {
+        Result<List<RoleRepresentation>> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
+        return result;
+    }
+
     public Result find() {
         Result<List<RoleRepresentation>> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
-//        Keycloak keycloak = this.session.getKeycloak();
-//        List<RoleRepresentation> list = keycloak.realm(properties.getRealm()).roles().list();
-//        result.setData(list);
         return result;
     }
 
@@ -33,4 +36,24 @@ public class RoleService extends BaseService {
         result.setData(role);
         return result;
     }
+
+    public Result updateByName(final String name) {
+        Result<RoleRepresentation> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
+        return result;
+    }
+
+    public Result delete() {
+        Result<List<RoleRepresentation>> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
+        return result;
+    }
+
+    /**
+     * Returns a stream of users that have the specified role name.
+     * @return
+     */
+    public Result users() {
+        Result<List<RoleRepresentation>> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
+        return result;
+    }
+
 }

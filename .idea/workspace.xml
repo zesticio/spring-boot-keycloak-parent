@@ -5,10 +5,71 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f4d75cb-5e7f-4c2b-b040-2177c6e522c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-keycloak-api/src/main/java/in/zestic/authy/keycloak/api/exception/KeycloakException.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/controller/CustomErrorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/controller/RootController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/handler/GlobalExceptionHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/interceptor/UserAuthenticationInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/impl/AttackDetectionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/impl/AuthenticationManagementService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/impl/ClientRoleMapping.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/impl/ClientScopeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/impl/ClientSecretService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/impl/ClientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/impl/OptionalClientScopeService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/impl/RealmAdminEventService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/impl/RealmAdminService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/impl/RealmRealmEventService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/impl/RoleService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/impl/UserAttackDetectionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/impl/UserConcentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/impl/UserCredentialService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/impl/UserFederatedIdentity.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/impl/UserGroupService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/impl/UserProfileService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/impl/UserSessionService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/test/resources/application-test.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-keycloak-authorization-client/src/main/java/in/zestic/authy/authorization/client/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-keycloak-authorization-client/src/main/java/in/zestic/authy/authorization/client/controller/RootController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-keycloak-authorization-client/src/main/java/in/zestic/authy/authorization/client/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-api/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-api/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-api/src/main/java/in/zestic/authy/keycloak/api/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-api/src/main/java/in/zestic/authy/keycloak/api/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/config/AppBasicAuthenticationEntryPoint.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/config/KeycloakManager.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/config/SecurityConfiguration.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/constant/KeycloakError.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/constant/KeycloakError.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/controller/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/controller/GroupController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/controller/GroupController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/controller/RoleController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/controller/RoleController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/controller/UserAddressController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/providers/CustomIdentityAuthenticationProvider.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-authorization-client/src/main/java/in/zestic/authy/authorization/client/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/GroupService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/impl/GroupService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/RoleService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/RoleService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/UserDetailsServiceImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-app/src/test/java/in/zestic/authy/app/AppApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/test/java/in/zestic/authy/app/AppApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-authorization-client/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-authorization-client/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-authorization-client/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-authorization-client/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-authorization-client/src/main/java/in/zestic/authy/authorization/client/SpringBootAuthorizationClientApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-authorization-client/src/main/java/in/zestic/authy/authorization/client/Application.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-authorization-client/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-authorization-client/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-authorization-client/src/test/java/in/zestic/authy/authorization/client/SpringBootAuthorizationClientApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-authorization-client/src/test/java/in/zestic/authy/authorization/client/ApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-bom/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-bom/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-test/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-test/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot-starter-keycloak/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-starter-keycloak/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-starter-keycloak/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-starter-keycloak/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-starter-keycloak/src/main/java/in/zestic/authy/keycloak/annotation/EnableKeycloakAuthentication.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-starter-keycloak/src/main/java/in/zestic/authy/keycloak/annotation/EnableKeycloakAuthentication.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -37,6 +98,14 @@
   <component name="GithubDefaultAccount">
     <option name="defaultAccountId" value="1dfcfcaf-7152-4102-888d-6b47b9c5bd0c" />
   </component>
+  <component name="MavenImportPreferences">
+    <option name="generalSettings">
+      <MavenGeneralSettings>
+        <option name="workOffline" value="true" />
+      </MavenGeneralSettings>
+    </option>
+  </component>
+  <component name="PhpDebugGeneral" listening_started="true" />
   <component name="ProjectId" id="25gzLwezCzGQYJoBfvZFMRYUan9" />
   <component name="ProjectLevelVcsManager">
     <ConfirmationsSetting value="2" id="Add" />
@@ -56,7 +125,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/spring-boot-starter-keycloak" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/spring-boot-keycloak-app/src/test" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -68,18 +137,19 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.29376498" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="show.run.dashboard.notification" value="false" />
   </component>
   <component name="ReactorSettings">
     <option name="notificationShown" value="true" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\spring-boot-app\src\main\resources" />
-      <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent" />
-      <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\spring-boot-app\config" />
-      <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\.github\workflows" />
-      <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\keycloak-docker-compose" />
+      <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\spring-boot-keycloak-app\src\test" />
+      <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\spring-boot-starter-keycloak" />
+      <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\spring-boot-keycloak-test" />
+      <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\spring-boot-keycloak-bom" />
+      <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\spring-boot-keycloak-authorization-client" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent" />
@@ -92,11 +162,11 @@
       <recent name="com.zestic.authy.keycloak" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.zestic.authy.keycloak.api.entity" />
-      <recent name="com.zestic.authy.app.controller" />
-      <recent name="com.zestic.authy.app.service" />
-      <recent name="com.zestic.authy.app.providers" />
-      <recent name="com.zestic.authy.app.config" />
+      <recent name="in.zestic.authy.app.service.impl" />
+      <recent name="in.zestic.authy.app.service" />
+      <recent name="in.zestic.authy.app.handler" />
+      <recent name="in.zestic.authy.keycloak.exception" />
+      <recent name="in.zestic.authy.app.controller" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -106,7 +176,7 @@
       <command value="mvn install" />
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AppApplication">
+  <component name="RunManager" selected="Spring Boot.spring-boot-keycloak-app">
     <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
@@ -120,34 +190,68 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AppApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="AppApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-boot-keycloak-app" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zestic.authy.app.Application" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="in.zestic.authy.app.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="in.zestic.authy.app" />
+      <option name="MAIN_CLASS_NAME" value="in.zestic.authy.app.AppApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Application" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="spring-boot-keycloak-app" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spring-boot-keycloak-app" />
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="in.zestic.authy.app.Application" />
+      <option name="ENABLE_JMX_AGENT" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringBootAuthorizationClientApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+    <configuration name="spring-boot-keycloak-authorization-client" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="spring-boot-keycloak-authorization-client" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zestic.authy.springbootauthorizationclient.SpringBootAuthorizationClientApplication" />
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+        </ENTRIES>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="in.zestic.authy.authorization.client.Application" />
+      <option name="ALTERNATIVE_JRE_PATH" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SpringBootKeycloakApiApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="spring-boot-keycloak-api" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.zestic.authy.keycloak.api.SpringBootKeycloakApiApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="JUnit.AppApplicationTests" />
+      <item itemvalue="Spring Boot.spring-boot-keycloak-app" />
+      <item itemvalue="Spring Boot.spring-boot-keycloak-authorization-client" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JUnit.AppApplicationTests" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -259,21 +363,16 @@
       <workItem from="1663674888259" duration="6678000" />
       <workItem from="1663692437572" duration="95000" />
       <workItem from="1665064139766" duration="2671000" />
-      <workItem from="1665072538695" duration="5146000" />
-    </task>
-    <task id="LOCAL-00008" summary="Added docker compose">
-      <created>1660668935674</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1660668935674</updated>
-    </task>
-    <task id="LOCAL-00009" summary="Added docker compose">
-      <created>1660669500287</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1660669500287</updated>
+      <workItem from="1665072538695" duration="5200000" />
+      <workItem from="1665128390527" duration="10697000" />
+      <workItem from="1665236755635" duration="18006000" />
+      <workItem from="1665323480643" duration="7165000" />
+      <workItem from="1665335710773" duration="2029000" />
+      <workItem from="1665352660096" duration="17809000" />
+      <workItem from="1665407998968" duration="6054000" />
+      <workItem from="1665414846374" duration="1935000" />
+      <workItem from="1665470414494" duration="8778000" />
+      <workItem from="1665484142970" duration="14985000" />
     </task>
     <task id="LOCAL-00010" summary="Added docker compose">
       <created>1660670276155</created>
@@ -604,7 +703,21 @@
       <option name="project" value="LOCAL" />
       <updated>1665077795814</updated>
     </task>
-    <option name="localTasksCounter" value="57" />
+    <task id="LOCAL-00057" summary="Updated">
+      <created>1665077889594</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1665077889594</updated>
+    </task>
+    <task id="LOCAL-00058" summary="Updated">
+      <created>1665077911361</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1665077911361</updated>
+    </task>
+    <option name="localTasksCounter" value="59" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
