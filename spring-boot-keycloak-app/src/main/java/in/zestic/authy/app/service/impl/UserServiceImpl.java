@@ -22,10 +22,8 @@ public class UserServiceImpl extends BaseService implements UserService {
 
     private static final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(UserServiceImpl.class);
 
-    protected final KeycloakProperties properties;
-
     public UserServiceImpl(KeycloakProperties properties) {
-        this.properties = properties;
+        super(properties);
     }
 
     public Result find(Optional<String> name) {
@@ -42,8 +40,8 @@ public class UserServiceImpl extends BaseService implements UserService {
 
     public Result findById(String id) {
         Result<UserRepresentation> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
-        UserResource user = keycloak.realm(properties.getRealm()).users().get(id);
-        result.setData(user.toRepresentation());
+//        UserResource user = keycloak.realm(properties.getRealm()).users().get(id);
+//        result.setData(user.toRepresentation());
         return result;
     }
 
@@ -65,27 +63,27 @@ public class UserServiceImpl extends BaseService implements UserService {
         ur.setCredentials(credentials);
         ur.setAttributes(Collections.singletonMap("origin", Arrays.asList("demo")));
 
-        realmResource = keycloak.realm(properties.getRealm());
-        UsersResource usersResource = realmResource.users();
-        Response response = usersResource.create(ur);
-        System.out.printf("Response : %s %s%n", response.getStatus(), response.getStatusInfo());
-        System.out.println(response.getLocation());
+//        realmResource = keycloak.realm(properties.getRealm());
+//        UsersResource usersResource = realmResource.users();
+//        Response response = usersResource.create(ur);
+//        System.out.printf("Response : %s %s%n", response.getStatus(), response.getStatusInfo());
+//        System.out.println(response.getLocation());
         return result;
     }
 
     public Result update(String id, Optional<String> group, Optional<String> role) {
         Result<User> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
-        if (group.isPresent()) {
-            keycloak.realm(properties.getRealm())
-                    .users()
-                    .get(id)
-                    .joinGroup(group.get());
-        } else {
-            final UserResource userResource = keycloak.realm(properties.getRealm()).users().get(id);
-            UserRepresentation userRepresentation = userResource.toRepresentation();
-            //TODO update user data
-            userResource.update(userRepresentation);
-        }
+//        if (group.isPresent()) {
+//            keycloak.realm(properties.getRealm())
+//                    .users()
+//                    .get(id)
+//                    .joinGroup(group.get());
+//        } else {
+//            final UserResource userResource = keycloak.realm(properties.getRealm()).users().get(id);
+//            UserRepresentation userRepresentation = userResource.toRepresentation();
+//            //TODO update user data
+//            userResource.update(userRepresentation);
+//        }
         return result;
     }
 
@@ -96,16 +94,16 @@ public class UserServiceImpl extends BaseService implements UserService {
      */
     public Result resetPassword(String id) {
         Result<User> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
-        final UserResource userResource = keycloak.realm(properties.getRealm()).users().get(id);
-        UserRepresentation userRepresentation = userResource.toRepresentation();
-
-        CredentialRepresentation credential = new CredentialRepresentation();
-        credential.setTemporary(false);
-        credential.setType(CredentialRepresentation.PASSWORD);
-        //TODO update password
-        credential.setValue("password");
-
-        userResource.resetPassword(credential);
+//        final UserResource userResource = keycloak.realm(properties.getRealm()).users().get(id);
+//        UserRepresentation userRepresentation = userResource.toRepresentation();
+//
+//        CredentialRepresentation credential = new CredentialRepresentation();
+//        credential.setTemporary(false);
+//        credential.setType(CredentialRepresentation.PASSWORD);
+//        //TODO update password
+//        credential.setValue("password");
+//
+//        userResource.resetPassword(credential);
         return result;
     }
 
@@ -116,7 +114,7 @@ public class UserServiceImpl extends BaseService implements UserService {
      */
     public Result logout(String id) {
         Result<User> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
-        keycloak.realm(properties.getRealm()).users().get(id).logout();
+//        keycloak.realm(properties.getRealm()).users().get(id).logout();
         return result;
     }
 

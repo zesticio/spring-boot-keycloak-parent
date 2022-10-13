@@ -5,8 +5,8 @@ import in.zestic.authy.app.constant.KeycloakError;
 import in.zestic.authy.app.service.impl.UserServiceImpl;
 import in.zestic.common.jwt.JWT;
 import in.zestic.common.jwt.JWTPayload;
-import in.zestic.common.security.Session;
-import in.zestic.common.security.service.UserAuthentication;
+import in.zestic.common.security.interceptors.UserAuthentication;
+import in.zestic.common.security.session.Session;
 import in.zestic.common.util.StringUtil;
 import org.jboss.resteasy.client.jaxrs.ResteasyClientBuilder;
 import org.keycloak.admin.client.Keycloak;
@@ -14,6 +14,7 @@ import org.keycloak.admin.client.KeycloakBuilder;
 import org.keycloak.admin.client.resource.RealmResource;
 import org.keycloak.admin.client.token.TokenManager;
 import org.springframework.security.core.userdetails.User;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
@@ -47,6 +48,7 @@ public class UserAuthenticationInterceptor implements UserAuthentication {
         RealmResource realmResource = keycloak.realm(this.properties.getRealm());
         try {
             TokenManager tokenManager = keycloak.tokenManager();
+
             logger.info("error " + tokenManager.getAccessToken().getError());
             logger.info("description " + tokenManager.getAccessToken().getErrorDescription());
             logger.info("access token " + tokenManager.getAccessTokenString());
@@ -60,11 +62,18 @@ public class UserAuthenticationInterceptor implements UserAuthentication {
             logger.info("claims " + StringUtil.toString(tokenManager.getAccessToken().getOtherClaims()));
 
             JWT jwt = new JWT(tokenManager.getAccessTokenString());
+            jwt.decode();
             JWTPayload payload = jwt.getPayload();
-            session.setUserDetails(User.withUsername(payload.getEmail())
-                    .authorities(String.join(", ", payload.getRealmAccess().getRoles()))
-                    .build());
+            String roles = String.join(", ", payload.getRealmAccess().getRoles());
+            UserDetails userDetails = User.withUsername(payload.getSub())
+                    .password(password)
+                    .authorities(roles)
+                    .build();
+            session.setUserDetails(userDetails);
+            session.setClient(keycloak);
+            session.setUserId(payload.getSub());
         } catch (Exception ex) {
+            logger.error("", ex);
             logger.info(ex.getMessage());
             session.setErrorCode(KeycloakError.KEYCLOAK_UNAUTHORIZED.getCode());
             session.setErrorMessage(KeycloakError.KEYCLOAK_UNAUTHORIZED.getMessage());

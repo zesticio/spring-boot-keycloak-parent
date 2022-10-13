@@ -14,10 +14,8 @@ public class RealmRealmEventService extends BaseService {
 
     private static final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(RealmRealmEventService.class);
 
-    protected final KeycloakProperties properties;
-
     public RealmRealmEventService(KeycloakProperties properties) {
-        this.properties = properties;
+        super(properties);
     }
 
     /**

@@ -14,10 +14,8 @@ public class UserCredentialService extends BaseService {
 
     private static final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(UserCredentialService.class);
 
-    protected final KeycloakProperties properties;
-
     public UserCredentialService(KeycloakProperties properties) {
-        this.properties = properties;
+        super(properties);
     }
 
     public Result find() {

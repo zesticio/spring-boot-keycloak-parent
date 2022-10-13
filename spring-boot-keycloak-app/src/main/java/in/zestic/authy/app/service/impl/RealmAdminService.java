@@ -14,10 +14,8 @@ public class RealmAdminService extends BaseService {
 
     private static final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(RealmAdminService.class);
 
-    protected final KeycloakProperties properties;
-
     public RealmAdminService(KeycloakProperties properties) {
-        this.properties = properties;
+        super(properties);
     }
 
     /**

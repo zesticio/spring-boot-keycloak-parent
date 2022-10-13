@@ -31,11 +31,7 @@ public class GroupController {
     @GetMapping(path = "")
     @RolesAllowed({"ROLE_ADMIN"})
     public ResponseEntity<Result> find(@QueryParam("name") Optional<String> name) {
-        Result response;
-        if (name.isEmpty())
-            response = service.find();
-        else
-            response = service.findByName(name.get());
+        Result response = null;
         return new ResponseEntity<Result>(response, HttpStatus.valueOf(response.getCode()));
     }
 }

@@ -14,10 +14,8 @@ public class UserGroupService extends BaseService {
 
     private static final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(UserGroupService.class);
 
-    protected final KeycloakProperties properties;
-
     public UserGroupService(KeycloakProperties properties) {
-        this.properties = properties;
+        super(properties);
     }
 
     public Result find() {

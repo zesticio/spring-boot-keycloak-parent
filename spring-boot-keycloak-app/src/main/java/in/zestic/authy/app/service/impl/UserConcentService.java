@@ -22,14 +22,13 @@ public class UserConcentService extends BaseService {
 
     private static final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(UserConcentService.class);
 
-    protected final KeycloakProperties properties;
-
     public UserConcentService(KeycloakProperties properties) {
-        this.properties = properties;
+        super(properties);
     }
 
     /**
      * Get consents granted by the user
+     *
      * @return
      */
     public Result find() {
@@ -39,6 +38,7 @@ public class UserConcentService extends BaseService {
 
     /**
      * Revoke consent and offline tokens for particular client from user
+     *
      * @return
      */
     public Result revoke() {

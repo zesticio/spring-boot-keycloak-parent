@@ -14,10 +14,8 @@ public class UserFederatedIdentity extends BaseService {
 
     private static final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(UserFederatedIdentity.class);
 
-    protected final KeycloakProperties properties;
-
     public UserFederatedIdentity(KeycloakProperties properties) {
-        this.properties = properties;
+        super(properties);
     }
 
     /**

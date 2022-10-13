@@ -14,14 +14,13 @@ public class RealmAdminEventService extends BaseService {
 
     private static final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(RealmAdminEventService.class);
 
-    protected final KeycloakProperties properties;
-
     public RealmAdminEventService(KeycloakProperties properties) {
-        this.properties = properties;
+        super(properties);
     }
 
     /**
      * Get admin events Returns all admin events, or filters events based on URL query parameters listed here
+     *
      * @return
      */
     public Result find() {

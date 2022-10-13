@@ -14,10 +14,8 @@ public class GroupService extends BaseService {
 
     private static final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(GroupService.class);
 
-    protected final KeycloakProperties properties;
-
     public GroupService(KeycloakProperties properties) {
-        this.properties = properties;
+        super(properties);
     }
 
     public Result create() {
@@ -37,8 +35,6 @@ public class GroupService extends BaseService {
 
     public Result findById(final String name) {
         Result<GroupRepresentation> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
-        GroupRepresentation groupRepresentation = keycloak.realm(properties.getRealm()).groups().group(name).toRepresentation();
-        result.setData(groupRepresentation);
         return result;
     }
 
@@ -54,6 +50,7 @@ public class GroupService extends BaseService {
 
     /**
      * return list of all members part of this group
+     *
      * @return
      */
     public Result members() {

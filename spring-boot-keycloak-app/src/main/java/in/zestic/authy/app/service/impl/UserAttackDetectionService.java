@@ -2,7 +2,7 @@ package in.zestic.authy.app.service.impl;
 
 import in.zestic.authy.app.config.KeycloakProperties;
 import in.zestic.common.entity.Result;
-import in.zestic.common.security.Session;
+import in.zestic.common.security.session.Session;
 import in.zestic.common.util.HTTPErrorCodes;
 import org.keycloak.admin.client.Keycloak;
 import org.keycloak.representations.idm.ClientRepresentation;

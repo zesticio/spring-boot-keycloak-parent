@@ -9,6 +9,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -24,18 +25,26 @@ public class ClientController {
         this.service = service;
     }
 
+    /**
+     *
+     * @return
+     */
     @ApiOperation(value = "Create a new client", response = ResponseEntity.class)
     @ApiResponses(value = {
             @ApiResponse(code = 201, message = "Client created"),
             @ApiResponse(code = 401, message = "Unauthorized")
     })
-    @GetMapping(path = "")
+    @PostMapping(path = "")
     @RolesAllowed({"ROLE_ADMIN"})
     public ResponseEntity<Result> create() {
         Result response = service.create();
         return new ResponseEntity<Result>(response, HttpStatus.valueOf(response.getCode()));
     }
 
+    /**
+     *
+     * @return
+     */
     @ApiOperation(value = "Find all clients", response = ResponseEntity.class)
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "Success"),
