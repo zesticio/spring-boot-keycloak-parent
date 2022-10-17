@@ -45,7 +45,7 @@ public class AttackDetectionUserController {
     /**
      * Clear login failures
      *
-     * @return
+     * @return ResponseEntity
      */
     @ApiOperation(value = "Clear login failures", response = ResponseEntity.class)
     @ApiResponses(value = {

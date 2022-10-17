@@ -47,9 +47,8 @@ public class KeycloakSecurityConfiguration extends KeycloakWebSecurityConfigurer
     /**
      * Registers the KeycloakAuthenticationProvider with the authentication manager.
      * We have extended user authentication using below
-     *
-     * @param auth
-     * @throws Exception
+     * @param auth AuthenticationManagerBuilder
+     * @throws Exception Exception
      */
     @Autowired
     public void configureGlobal(AuthenticationManagerBuilder auth) throws Exception {
@@ -63,7 +62,8 @@ public class KeycloakSecurityConfiguration extends KeycloakWebSecurityConfigurer
     }
 
     /**
-     * @return
+     *
+     * @return SessionAuthenticationStrategy
      */
     @Bean
     @Override
@@ -79,7 +79,8 @@ public class KeycloakSecurityConfiguration extends KeycloakWebSecurityConfigurer
     }
 
     /**
-     * @return
+     *
+     * @return SessionRegistry
      */
     @Bean
     protected SessionRegistry buildSessionRegistry() {
@@ -88,9 +89,8 @@ public class KeycloakSecurityConfiguration extends KeycloakWebSecurityConfigurer
 
     /**
      * TODO
-     *
-     * @param http
-     * @throws Exception
+     * @param http HttpSecurity
+     * @throws Exception Exception
      */
     @Override
     protected void configure(HttpSecurity http) throws Exception {
@@ -105,8 +105,9 @@ public class KeycloakSecurityConfiguration extends KeycloakWebSecurityConfigurer
     }
 
     /**
-     * @param properties
-     * @return
+     *
+     * @param properties KeycloakSpringBootProperties
+     * @return KeycloakConfigResolver
      */
     @Bean
     @Primary
@@ -115,7 +116,8 @@ public class KeycloakSecurityConfiguration extends KeycloakWebSecurityConfigurer
     }
 
     /**
-     * @return
+     *
+     * @return KeycloakSecurityContext
      */
     @Bean
     @Scope(scopeName = WebApplicationContext.SCOPE_REQUEST, proxyMode = ScopedProxyMode.TARGET_CLASS)

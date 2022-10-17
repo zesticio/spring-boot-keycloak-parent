@@ -89,8 +89,8 @@ public class UserServiceImpl extends BaseService implements UserService {
 
     /**
      * Set up a new password for the user.
-     * @param id
-     * @return
+     * @param id String
+     * @return Result
      */
     public Result resetPassword(String id) {
         Result<User> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
@@ -109,8 +109,8 @@ public class UserServiceImpl extends BaseService implements UserService {
 
     /**
      * Remove all user sessions associated with the user Also send notification to all clients that have an admin URL to invalidate the sessions for the particular user.
-     * @param id
-     * @return
+     * @param id String
+     * @return Result
      */
     public Result logout(String id) {
         Result<User> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
@@ -140,7 +140,7 @@ public class UserServiceImpl extends BaseService implements UserService {
 
     /**
      * Impersonate the user
-     * @return
+     * @return Result
      */
     public Result impersonate() {
         Result<List<GroupRepresentation>> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
@@ -149,7 +149,7 @@ public class UserServiceImpl extends BaseService implements UserService {
 
     /**
      * Send an email-verification email to the user An email contains a link the user can click to verify their email address.
-     * @return
+     * @return Result
      */
     public Result sendVerifyEmail() {
         Result<List<GroupRepresentation>> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");

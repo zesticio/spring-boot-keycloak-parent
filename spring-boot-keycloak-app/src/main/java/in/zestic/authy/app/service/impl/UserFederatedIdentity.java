@@ -20,7 +20,8 @@ public class UserFederatedIdentity extends BaseService {
 
     /**
      * Get social logins associated with the user
-     * @return
+     *
+     * @return Result
      */
     public Result find() {
         Result<List<GroupRepresentation>> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
@@ -29,7 +30,8 @@ public class UserFederatedIdentity extends BaseService {
 
     /**
      * Add a social login provider to the user
-     * @return
+     *
+     * @return Result
      */
     public Result add() {
         Result<List<GroupRepresentation>> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
@@ -38,11 +40,11 @@ public class UserFederatedIdentity extends BaseService {
 
     /**
      * Remove a social login provider from user
-     * @return
+     *
+     * @return Result
      */
     public Result delete() {
         Result<List<GroupRepresentation>> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
         return result;
     }
-
 }

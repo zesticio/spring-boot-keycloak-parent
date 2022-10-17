@@ -10,7 +10,7 @@ import java.lang.annotation.*;
 @Target({ElementType.PARAMETER})
 @Retention(RetentionPolicy.RUNTIME)
 @Constraint(validatedBy = UserValidationImpl.class)
-public @interface UserValidator {
+public @interface UserValidation {
 
     String message() default "Invalid user object";
 

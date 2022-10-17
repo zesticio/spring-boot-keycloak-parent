@@ -1,9 +1,7 @@
 package in.zestic.authy.app.controller;
 
-import in.zestic.authy.app.service.ClientService;
-import in.zestic.authy.app.service.impl.ClientServiceImpl;
-import in.zestic.authy.app.validator.ClientValidation;
-import in.zestic.authy.keycloak.api.entity.Client;
+import in.zestic.authy.app.service.ClientRoleMapping;
+import in.zestic.authy.app.service.ClientScopeService;
 import in.zestic.common.entity.Result;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
@@ -13,20 +11,17 @@ import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-import javax.annotation.security.RolesAllowed;
-
 @RestController
-@RequestMapping(value = "/clients", produces = {MediaType.APPLICATION_JSON_VALUE})
-public class ClientController {
+@RequestMapping(value = "/client-scopes", produces = {MediaType.APPLICATION_JSON_VALUE})
+public class ClientScopeController {
 
-    private ClientService service;
+    private ClientScopeService service;
 
-    public ClientController(ClientService service) {
+    public ClientScopeController(ClientScopeService service) {
         this.service = service;
     }
 
     /**
-     * @param client Client
      * @return ResponseEntity
      */
     @ApiOperation(value = "Create a new client", response = ResponseEntity.class)
@@ -35,8 +30,8 @@ public class ClientController {
             @ApiResponse(code = 401, message = "Unauthorized")
     })
     @PostMapping(path = "")
-    public ResponseEntity<Result> create(@ClientValidation @RequestBody Client client) {
-        Result response = service.create(client);
+    public ResponseEntity<Result> create() {
+        Result response = service.create();
         return new ResponseEntity<Result>(response, HttpStatus.valueOf(response.getCode()));
     }
 
@@ -49,54 +44,53 @@ public class ClientController {
             @ApiResponse(code = 401, message = "Unauthorized")
     })
     @GetMapping(path = "")
-    @RolesAllowed({"ROLE_ADMIN"})
     public ResponseEntity<Result> find() {
         Result response = service.find();
         return new ResponseEntity<Result>(response, HttpStatus.valueOf(response.getCode()));
     }
 
     /**
-     * @param id String
+     * @param clientScopeId String
      * @return ResponseEntity
      */
-    @ApiOperation(value = "Find client by id", response = ResponseEntity.class)
+    @ApiOperation(value = "Find client scope by id", response = ResponseEntity.class)
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "Success"),
             @ApiResponse(code = 401, message = "Unauthorized")
     })
-    @GetMapping(path = "/{id}")
-    public ResponseEntity<Result> findById(@PathVariable(value = "id") String id) {
-        Result response = service.findById(id);
+    @GetMapping(path = "/{clientScopeId}")
+    public ResponseEntity<Result> findById(@PathVariable(value = "clientScopeId") String clientScopeId) {
+        Result response = service.findById(clientScopeId);
         return new ResponseEntity<Result>(response, HttpStatus.valueOf(response.getCode()));
     }
 
     /**
-     * @param id String
+     * @param clientScopeId String
      * @return ResponseEntity
      */
-    @ApiOperation(value = "Update client", response = ResponseEntity.class)
+    @ApiOperation(value = "Update client scope", response = ResponseEntity.class)
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "Success"),
             @ApiResponse(code = 401, message = "Unauthorized")
     })
-    @PutMapping(path = "/{id}")
-    public ResponseEntity<Result> update(@PathVariable(value = "id") String id) {
-        Result response = service.update(id);
+    @PutMapping(path = "/{clientScopeId}")
+    public ResponseEntity<Result> update(@PathVariable(value = "clientScopeId") String clientScopeId) {
+        Result response = service.update(clientScopeId);
         return new ResponseEntity<Result>(response, HttpStatus.valueOf(response.getCode()));
     }
 
     /**
-     * @param id String
+     * @param clientScopeId String
      * @return ResponseEntity
      */
-    @ApiOperation(value = "Update client", response = ResponseEntity.class)
+    @ApiOperation(value = "Delete client scope", response = ResponseEntity.class)
     @ApiResponses(value = {
             @ApiResponse(code = 200, message = "Success"),
             @ApiResponse(code = 401, message = "Unauthorized")
     })
-    @DeleteMapping(path = "/{id}")
-    public ResponseEntity<Result> delete(@PathVariable(value = "id") String id) {
-        Result response = service.delete(id);
+    @DeleteMapping(path = "/{clientScopeId}")
+    public ResponseEntity<Result> delete(@PathVariable(value = "clientScopeId") String clientScopeId) {
+        Result response = service.delete(clientScopeId);
         return new ResponseEntity<Result>(response, HttpStatus.valueOf(response.getCode()));
     }
 }

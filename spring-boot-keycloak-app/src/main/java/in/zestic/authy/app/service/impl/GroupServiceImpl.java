@@ -2,6 +2,7 @@ package in.zestic.authy.app.service.impl;
 
 import in.zestic.authy.app.config.KeycloakProperties;
 import in.zestic.authy.app.service.BaseService;
+import in.zestic.authy.app.service.GroupService;
 import in.zestic.common.entity.Result;
 import in.zestic.common.util.HTTPErrorCodes;
 import org.keycloak.representations.idm.GroupRepresentation;
@@ -10,11 +11,11 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class GroupService extends BaseService {
+public class GroupServiceImpl extends BaseService implements GroupService {
 
-    private static final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(GroupService.class);
+    private static final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(GroupServiceImpl.class);
 
-    public GroupService(KeycloakProperties properties) {
+    public GroupServiceImpl(KeycloakProperties properties) {
         super(properties);
     }
 
@@ -33,17 +34,17 @@ public class GroupService extends BaseService {
         return result;
     }
 
-    public Result findById(final String name) {
+    public Result findById(final String userId) {
         Result<GroupRepresentation> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
         return result;
     }
 
-    public Result update() {
+    public Result update(final String userId) {
         Result<List<GroupRepresentation>> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
         return result;
     }
 
-    public Result delete() {
+    public Result delete(final String userId) {
         Result<List<GroupRepresentation>> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
         return result;
     }
@@ -51,7 +52,7 @@ public class GroupService extends BaseService {
     /**
      * return list of all members part of this group
      *
-     * @return
+     * @return Result
      */
     public Result members() {
         Result<List<GroupRepresentation>> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");

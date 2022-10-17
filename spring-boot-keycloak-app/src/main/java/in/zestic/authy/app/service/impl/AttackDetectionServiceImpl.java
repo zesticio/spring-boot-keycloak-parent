@@ -21,10 +21,14 @@ public class AttackDetectionServiceImpl extends BaseService implements AttackDet
     }
 
     public Result delete() {
-        Result<Void> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
+        Result<Map<String, Object>> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
         AttackDetectionResource resource = getResource();
         if (resource != null) {
             resource.clearAllBruteForce();
+            result.setMessage("Cleared all login failures");
+        } else {
+            result.setCode(HTTPErrorCodes.INTERNAL_SERVER_ERROR.getCode());
+            result.setMessage(HTTPErrorCodes.INTERNAL_SERVER_ERROR.getMessage());
         }
         return result;
     }
@@ -33,8 +37,13 @@ public class AttackDetectionServiceImpl extends BaseService implements AttackDet
     public Result delete(String userId) {
         Result<Void> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
         AttackDetectionResource resource = getResource();
-        if (resource != null)
+        if (resource != null) {
             resource.clearBruteForceForUser(userId);
+            result.setMessage("Cleared login failures for user {" + userId + "}");
+        } else {
+            result.setCode(HTTPErrorCodes.INTERNAL_SERVER_ERROR.getCode());
+            result.setMessage(HTTPErrorCodes.INTERNAL_SERVER_ERROR.getMessage());
+        }
         return result;
     }
 

@@ -7,14 +7,14 @@ public interface AttackDetectionUserService {
     /**
      * Clear any user login failures for the user This can release temporary disabled user
      *
-     * @return
+     * @return Result
      */
     Result delete();
 
     /**
      * Get status of a username in brute force detection
      *
-     * @return
+     * @return Result
      */
     Result status();
 }

@@ -35,6 +35,9 @@ public class AttackDetectionUserServiceImpl extends BaseService implements Attac
         if (resource != null) {
             resource.clearBruteForceForUser(session.getUserId());
             result.setMessage("Cleared login failures");
+        } else {
+            result.setCode(HTTPErrorCodes.INTERNAL_SERVER_ERROR.getCode());
+            result.setMessage(HTTPErrorCodes.INTERNAL_SERVER_ERROR.getMessage());
         }
         return result;
     }

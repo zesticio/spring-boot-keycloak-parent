@@ -7,23 +7,23 @@ public interface AttackDetectionService {
     /**
      * Clear any user login failures for all users This can release temporary disabled users
      *
-     * @return
+     * @return Result
      */
     Result delete();
 
     /**
      * Clear any user login failures for the user This can release temporary disabled user
      *
-     * @param userId
-     * @return
+     * @param userId String
+     * @return Result
      */
     Result delete(String userId);
 
     /**
      * Get status of a username in brute force detection
      *
-     * @param userId
-     * @return
+     * @param userId String
+     * @return Result
      */
     Result status(String userId);
 }

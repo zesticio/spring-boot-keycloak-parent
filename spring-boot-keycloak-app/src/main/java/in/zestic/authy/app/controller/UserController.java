@@ -1,7 +1,7 @@
 package in.zestic.authy.app.controller;
 
 import in.zestic.authy.app.service.impl.UserServiceImpl;
-import in.zestic.authy.app.validator.UserValidator;
+import in.zestic.authy.app.validator.UserValidation;
 import in.zestic.authy.keycloak.api.entity.User;
 import in.zestic.common.entity.Result;
 import org.springframework.http.HttpStatus;
@@ -25,8 +25,8 @@ public class UserController {
 
     /**
      * list all users
-     *
-     * @return
+     * @param name Optional String
+     * @return ResponseEntity
      */
     @GetMapping(path = "")
     @RolesAllowed({"ROLE_ADMIN"})
@@ -38,8 +38,8 @@ public class UserController {
     /**
      * Get user by id
      *
-     * @param id
-     * @return
+     * @param id String
+     * @return ResponseEntity
      */
     @GetMapping(path = "/{id}")
     @RolesAllowed({"ROLE_ADMIN"})
@@ -51,11 +51,12 @@ public class UserController {
     /**
      * Create a new user
      *
-     * @return
+     * @param user User
+     * @return ResponseEntity
      */
     @PostMapping(path = "")
     @RolesAllowed({"ROLE_ADMIN"})
-    public ResponseEntity<Result> create(@UserValidator @RequestBody User user) {
+    public ResponseEntity<Result> create(@UserValidation @RequestBody User user) {
         Result response = service.create(user);
         return new ResponseEntity<Result>(response, HttpStatus.valueOf(response.getCode()));
     }
@@ -63,8 +64,10 @@ public class UserController {
     /**
      * Update user
      *
-     * @param id
-     * @return
+     * @param id String
+     * @param group Optional String
+     * @param role Optional String
+     * @return ResponseEntity
      */
     @PutMapping(path = "/{id}")
     @RolesAllowed({"ROLE_ADMIN"})
@@ -75,6 +78,10 @@ public class UserController {
         return new ResponseEntity<Result>(response, HttpStatus.valueOf(response.getCode()));
     }
 
+    /**
+     * @param id String
+     * @return ResponseEntity
+     */
     @PutMapping(path = "/{id}/reset_password")
     @RolesAllowed({"ROLE_ADMIN"})
     public ResponseEntity<Result> resetPassword(@PathVariable(value = "id") String id) {
@@ -82,6 +89,10 @@ public class UserController {
         return new ResponseEntity<Result>(response, HttpStatus.valueOf(response.getCode()));
     }
 
+    /**
+     * @param id String
+     * @return ResponseEntity
+     */
     @GetMapping(path = "/{id}/logout")
     public ResponseEntity<Result> logout(@PathVariable(value = "id") String id) {
         Result response = service.logout(id);

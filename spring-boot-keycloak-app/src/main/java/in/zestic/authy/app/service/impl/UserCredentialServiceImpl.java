@@ -2,6 +2,8 @@ package in.zestic.authy.app.service.impl;
 
 import in.zestic.authy.app.config.KeycloakProperties;
 import in.zestic.authy.app.service.BaseService;
+import in.zestic.authy.app.service.UserConsentService;
+import in.zestic.authy.app.service.UserCredentialService;
 import in.zestic.common.entity.Result;
 import in.zestic.common.util.HTTPErrorCodes;
 import org.keycloak.representations.idm.GroupRepresentation;
@@ -10,24 +12,24 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 
 @Service
-public class RealmRealmEventService extends BaseService {
+public class UserCredentialServiceImpl extends BaseService implements UserCredentialService {
 
-    private static final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(RealmRealmEventService.class);
+    private static final org.slf4j.Logger logger = org.slf4j.LoggerFactory.getLogger(UserCredentialServiceImpl.class);
 
-    public RealmRealmEventService(KeycloakProperties properties) {
+    public UserCredentialServiceImpl(KeycloakProperties properties) {
         super(properties);
     }
 
-    /**
-     * Get admin events Returns all admin events, or filters events based on URL query parameters listed here
-     * @return
-     */
     public Result find() {
         Result<List<GroupRepresentation>> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
         return result;
     }
 
-    public Result delete() {
+    /**
+     * Remove a credential for a user
+     * @return Result
+     */
+    public Result delete(String credentialId) {
         Result<List<GroupRepresentation>> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
         return result;
     }
