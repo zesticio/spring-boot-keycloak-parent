@@ -20,7 +20,7 @@ services:
     image: quay.io/keycloak/keycloak:17.0.0-legacy
     restart: unless-stopped
     volumes:
-      - /zestic/authy/keycloak/themes:/opt/jboss/keycloak/themes
+#      - /zestic/authy/keycloak/themes:/opt/jboss/keycloak/themes
 #      - ./themes:/opt/jboss/keycloak/themes/zestic
     logging:
       options:
