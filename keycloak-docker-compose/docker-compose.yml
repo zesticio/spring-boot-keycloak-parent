@@ -19,6 +19,8 @@ services:
     container_name: authy-keycloak
     image: quay.io/keycloak/keycloak:17.0.0-legacy
     restart: unless-stopped
+    volumes:
+      - /zestic/authy/keycloak/:/opt/jboss/
     logging:
       options:
         max-size: "10m"
