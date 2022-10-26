@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f4d75cb-5e7f-4c2b-b040-2177c6e522c3" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-docker-compose/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -322,14 +321,7 @@
       <workItem from="1666705124709" duration="692000" />
       <workItem from="1666708963557" duration="884000" />
       <workItem from="1666711818502" duration="2762000" />
-      <workItem from="1666763687023" duration="11242000" />
-    </task>
-    <task id="LOCAL-00021" summary="Updated">
-      <created>1660845948829</created>
-      <option name="number" value="00021" />
-      <option name="presentableId" value="LOCAL-00021" />
-      <option name="project" value="LOCAL" />
-      <updated>1660845948829</updated>
+      <workItem from="1666763687023" duration="11295000" />
     </task>
     <task id="LOCAL-00022" summary="Updated">
       <created>1660846709717</created>
@@ -667,7 +659,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666786911971</updated>
     </task>
-    <option name="localTasksCounter" value="70" />
+    <task id="LOCAL-00070" summary="Updated">
+      <created>1666786962262</created>
+      <option name="number" value="00070" />
+      <option name="presentableId" value="LOCAL-00070" />
+      <option name="project" value="LOCAL" />
+      <updated>1666786962262</updated>
+    </task>
+    <option name="localTasksCounter" value="71" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
