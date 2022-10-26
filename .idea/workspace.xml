@@ -322,14 +322,7 @@
       <workItem from="1666705124709" duration="692000" />
       <workItem from="1666708963557" duration="884000" />
       <workItem from="1666711818502" duration="2762000" />
-      <workItem from="1666763687023" duration="7445000" />
-    </task>
-    <task id="LOCAL-00016" summary="Moved to postgres database, in mysql there was primary key exception">
-      <created>1660842152523</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1660842152523</updated>
+      <workItem from="1666763687023" duration="8347000" />
     </task>
     <task id="LOCAL-00017" summary="Updated">
       <created>1660842962505</created>
@@ -667,7 +660,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666774966364</updated>
     </task>
-    <option name="localTasksCounter" value="65" />
+    <task id="LOCAL-00065" summary="Updated">
+      <created>1666781941392</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1666781941392</updated>
+    </task>
+    <option name="localTasksCounter" value="66" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
