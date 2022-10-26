@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f4d75cb-5e7f-4c2b-b040-2177c6e522c3" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-docker-compose/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/impl/RealmServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/impl/RealmServiceImpl.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -321,14 +323,7 @@
       <workItem from="1666705124709" duration="692000" />
       <workItem from="1666708963557" duration="884000" />
       <workItem from="1666711818502" duration="2762000" />
-      <workItem from="1666763687023" duration="8649000" />
-    </task>
-    <task id="LOCAL-00019" summary="Updated">
-      <created>1660844201822</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1660844201822</updated>
+      <workItem from="1666763687023" duration="11198000" />
     </task>
     <task id="LOCAL-00020" summary="Updated">
       <created>1660844793749</created>
@@ -666,7 +661,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666783015613</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="Updated">
+      <created>1666783143937</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1666783143937</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

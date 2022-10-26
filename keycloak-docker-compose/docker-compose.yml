@@ -21,6 +21,7 @@ services:
     restart: unless-stopped
     volumes:
       - /zestic/authy/keycloak/themes:/opt/jboss/keycloak/themes
+      - ./themes/fhswf:/opt/jboss/keycloak/themes/fhswf
     logging:
       options:
         max-size: "10m"

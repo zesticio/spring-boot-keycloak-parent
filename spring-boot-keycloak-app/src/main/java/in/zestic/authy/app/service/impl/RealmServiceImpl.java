@@ -47,8 +47,8 @@ public class RealmServiceImpl extends BaseService implements RealmService {
             realmRepresentation.setEnabled(realm.getEnabled());
 
             Map<String, String> smtpServer = new HashMap<>();
-            smtpServer.put("password", realm.getSmtpServer().getPassword());
-            smtpServer.put("replyToDisplayName", realm.getSmtpServer().getReplyToDisplayName());
+            smtpServer.put("password", "Reset@4321");
+            smtpServer.put("replyToDisplayName", "");
             smtpServer.put("starttls", "");
             smtpServer.put("auth", "true");
             smtpServer.put("port", "465");
