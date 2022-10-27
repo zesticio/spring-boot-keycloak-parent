@@ -42,13 +42,14 @@ public class RealmServiceImpl extends BaseService implements RealmService {
         RealmsResource resource = getResource();
         if (resource != null) {
             RealmRepresentation realmRepresentation = new RealmRepresentation();
-            realmRepresentation.setRealm(realm.getRealm());
+            realmRepresentation.setId(realm.getName());
+            realmRepresentation.setRealm(realm.getName());
             realmRepresentation.setDisplayName(realm.getName());
             realmRepresentation.setEnabled(realm.getEnabled());
 
             Map<String, String> smtpServer = new HashMap<>();
-            smtpServer.put("password", "Reset@4321");
-            smtpServer.put("replyToDisplayName", "");
+            smtpServer.put("password", "");
+            smtpServer.put("replyToDisplayName", "Administrator");
             smtpServer.put("starttls", "");
             smtpServer.put("auth", "true");
             smtpServer.put("port", "465");
@@ -61,6 +62,10 @@ public class RealmServiceImpl extends BaseService implements RealmService {
             realmRepresentation.setSmtpServer(smtpServer);
 
             realmRepresentation.setLoginTheme("keycloak");
+            realmRepresentation.setAccountTheme("keycloak.v2");
+            realmRepresentation.setAdminTheme("keycloak");
+            realmRepresentation.setEmailTheme("keycloak");
+            realmRepresentation.setInternationalizationEnabled(false);
 
             realmRepresentation.setRegistrationAllowed(false);
             realmRepresentation.setLoginWithEmailAllowed(true);
@@ -68,21 +73,12 @@ public class RealmServiceImpl extends BaseService implements RealmService {
             realmRepresentation.setResetPasswordAllowed(false);
             realmRepresentation.setEditUsernameAllowed(true);
             realmRepresentation.setBruteForceProtected(true);
+
             resource.create(realmRepresentation);
         } else {
             result.setCode(HTTPErrorCodes.INTERNAL_SERVER_ERROR.getCode());
             result.setMessage(HTTPErrorCodes.INTERNAL_SERVER_ERROR.getMessage());
         }
-        return result;
-    }
-
-    public Result update(String id) {
-        Result<User> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
-        return result;
-    }
-
-    public Result delete(String id) {
-        Result<User> result = new Result(HTTPErrorCodes.SUCCESS.getCode(), "");
         return result;
     }
 

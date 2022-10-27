@@ -9,8 +9,4 @@ public interface RealmService {
     public Result create(Realm realm);
 
     public Result find();
-
-    public Result update(String id);
-
-    public Result delete(String id);
 }

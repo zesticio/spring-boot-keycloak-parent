@@ -9,15 +9,16 @@ import in.zestic.common.security.interceptors.UserAuthentication;
 import in.zestic.common.security.session.Session;
 import in.zestic.common.util.StringUtil;
 import org.jboss.resteasy.client.jaxrs.ResteasyClientBuilder;
+import org.keycloak.OAuth2Constants;
 import org.keycloak.admin.client.Keycloak;
 import org.keycloak.admin.client.KeycloakBuilder;
-import org.keycloak.admin.client.resource.RealmResource;
 import org.keycloak.admin.client.token.TokenManager;
 import org.springframework.security.core.userdetails.User;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.Resource;
+import javax.ws.rs.ForbiddenException;
 
 @Service
 public class UserAuthenticationInterceptor implements UserAuthentication {
@@ -41,14 +42,15 @@ public class UserAuthenticationInterceptor implements UserAuthentication {
                 .password(password)
                 .clientId(this.properties.getResourceName()) //
                 .clientSecret((String) this.properties.getResourceSecret()) //
+                .grantType(OAuth2Constants.PASSWORD)
                 .resteasyClient(new ResteasyClientBuilder()
+//                        .hostnameVerifier(new AllowAllHostnameVerifier())
                         .connectionPoolSize(this.properties.getConnectionPoolSize())
                         .build())
                 .build();
-        RealmResource realmResource = keycloak.realm(this.properties.getRealm());
+
         try {
             TokenManager tokenManager = keycloak.tokenManager();
-
             logger.info("error " + tokenManager.getAccessToken().getError());
             logger.info("description " + tokenManager.getAccessToken().getErrorDescription());
             logger.info("access token " + tokenManager.getAccessTokenString());
@@ -72,11 +74,13 @@ public class UserAuthenticationInterceptor implements UserAuthentication {
             session.setUserDetails(userDetails);
             session.setClient(keycloak);
             session.setUserId(payload.getSub());
-        } catch (Exception ex) {
-            logger.error("", ex);
+        } catch (ForbiddenException ex) {
             logger.info(ex.getMessage());
             session.setErrorCode(KeycloakError.KEYCLOAK_UNAUTHORIZED.getCode());
             session.setErrorMessage(KeycloakError.KEYCLOAK_UNAUTHORIZED.getMessage());
+        } catch (RuntimeException ex) {
+            session.setErrorCode(KeycloakError.KEYCLOAK_INTERNAL_SERVER_ERROR.getCode());
+            session.setErrorMessage(KeycloakError.KEYCLOAK_INTERNAL_SERVER_ERROR.getMessage());
         }
         return session;
     }

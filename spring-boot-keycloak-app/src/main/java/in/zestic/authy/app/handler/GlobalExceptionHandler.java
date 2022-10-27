@@ -16,6 +16,7 @@ import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
 import javax.servlet.http.HttpServletResponse;
+import javax.ws.rs.ForbiddenException;
 import javax.ws.rs.NotAuthorizedException;
 import java.io.IOException;
 
@@ -26,6 +27,16 @@ public class GlobalExceptionHandler extends ResponseEntityExceptionHandler {
 
     @ExceptionHandler(AuthenticationException.class)
     public final ResponseEntity<Result> httpHostConnectionException(Exception ex, WebRequest request) throws IOException {
+        return createErrorResponseEntity(ex, HttpStatus.UNAUTHORIZED, HttpStatus.UNAUTHORIZED.value());
+    }
+
+    @ExceptionHandler(ForbiddenException.class)
+    public final ResponseEntity<Result> forbiddenException(Exception ex, WebRequest request) throws IOException {
+        return createErrorResponseEntity(ex, HttpStatus.UNAUTHORIZED, HttpStatus.UNAUTHORIZED.value());
+    }
+
+    @ExceptionHandler(NotAuthorizedException.class)
+    public final ResponseEntity<Result> notAuthorizedException(Exception ex, WebRequest request) throws IOException {
         return createErrorResponseEntity(ex, HttpStatus.UNAUTHORIZED, HttpStatus.UNAUTHORIZED.value());
     }
 

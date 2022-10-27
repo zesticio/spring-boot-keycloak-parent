@@ -13,17 +13,8 @@ import java.util.Map;
 public class Realm extends Entity<String, Realm> {
 
     private String id;
-    private String realm;
     private String name;
     private Boolean enabled;
-    private Boolean registrationAllowed;
-    private Boolean loginWithEmailAllowed;
-    private Boolean duplicateEmailsAllowed;
-    private Boolean resetPasswordAllowed;
-    private Boolean editUsernameAllowed;
-    private Boolean bruteForceProtected;
-
-    private SMTPServer smtpServer;
 
     private Map<String, String> attributes;
 }
