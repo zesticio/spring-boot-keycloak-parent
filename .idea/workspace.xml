@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f4d75cb-5e7f-4c2b-b040-2177c6e522c3" name="Default Changelist" comment="" />
+    <list default="true" id="3f4d75cb-5e7f-4c2b-b040-2177c6e522c3" name="Default Changelist" comment="Updated">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-docker-compose/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/nginx/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-docker-compose/www/index.html" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -82,11 +86,11 @@
       <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\spring-boot-keycloak-bom" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\keycloak-docker-compose" />
+      <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\keycloak-docker-compose\nginx\www" />
       <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\keycloak-docker-compose\keycloak" />
       <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\keycloak-docker-compose\nginx" />
       <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent" />
-      <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\spring-boot-app" />
-      <recent name="C:\GitHub\Zestic\Products\Authy\Source\authy\dockers\apim\conf" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.zestic.authy.keycloak.api" />
@@ -322,14 +326,7 @@
       <workItem from="1666711818502" duration="2762000" />
       <workItem from="1666763687023" duration="27110000" />
       <workItem from="1666847737459" duration="21640000" />
-      <workItem from="1666934974988" duration="2215000" />
-    </task>
-    <task id="LOCAL-00028" summary="Updated">
-      <created>1660930308296</created>
-      <option name="number" value="00028" />
-      <option name="presentableId" value="LOCAL-00028" />
-      <option name="project" value="LOCAL" />
-      <updated>1660930308296</updated>
+      <workItem from="1666934974988" duration="3074000" />
     </task>
     <task id="LOCAL-00029" summary="Updated">
       <created>1660930566604</created>
@@ -667,7 +664,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666981318198</updated>
     </task>
-    <option name="localTasksCounter" value="77" />
+    <task id="LOCAL-00077" summary="Updated">
+      <created>1666981672178</created>
+      <option name="number" value="00077" />
+      <option name="presentableId" value="LOCAL-00077" />
+      <option name="project" value="LOCAL" />
+      <updated>1666981672178</updated>
+    </task>
+    <option name="localTasksCounter" value="78" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
