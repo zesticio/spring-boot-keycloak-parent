@@ -7,8 +7,8 @@ services:
     container_name: nginx
     restart: unless-stopped
     volumes:
-      - ./nginx:/etc/nginx
-      - ./www:/usr/share/nginx/html
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./www/index.html:/usr/share/nginx/html/index.html
     ports:
       - "9080:9080"
     depends_on:
