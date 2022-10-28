@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f4d75cb-5e7f-4c2b-b040-2177c6e522c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/keycloak-docker-compose/keycloak/profile.properties" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keycloak-docker-compose/nginx/index.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keycloak-docker-compose/nginx/mime.types" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-docker-compose/keycloak/create.sql" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-docker-compose/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-docker-compose/nginx/nginx.conf" afterDir="false" />
-    </list>
+    <list default="true" id="3f4d75cb-5e7f-4c2b-b040-2177c6e522c3" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -116,6 +108,19 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.spring-boot-keycloak-app">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AppApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-boot-keycloak-app" />
       <extension name="coverage">
@@ -317,14 +322,7 @@
       <workItem from="1666711818502" duration="2762000" />
       <workItem from="1666763687023" duration="27110000" />
       <workItem from="1666847737459" duration="21640000" />
-      <workItem from="1666934974988" duration="1835000" />
-    </task>
-    <task id="LOCAL-00027" summary="Updated">
-      <created>1660929746002</created>
-      <option name="number" value="00027" />
-      <option name="presentableId" value="LOCAL-00027" />
-      <option name="project" value="LOCAL" />
-      <updated>1660929746002</updated>
+      <workItem from="1666934974988" duration="2215000" />
     </task>
     <task id="LOCAL-00028" summary="Updated">
       <created>1660930308296</created>
@@ -662,7 +660,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666874150571</updated>
     </task>
-    <option name="localTasksCounter" value="76" />
+    <task id="LOCAL-00076" summary="Updated">
+      <created>1666981318197</created>
+      <option name="number" value="00076" />
+      <option name="presentableId" value="LOCAL-00076" />
+      <option name="project" value="LOCAL" />
+      <updated>1666981318198</updated>
+    </task>
+    <option name="localTasksCounter" value="77" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
