@@ -5,9 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f4d75cb-5e7f-4c2b-b040-2177c6e522c3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/keycloak-docker-compose/keycloak/profile.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keycloak-docker-compose/nginx/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keycloak-docker-compose/nginx/mime.types" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-docker-compose/keycloak/create.sql" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-docker-compose/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-docker-compose/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-docker-compose/nginx/nginx.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -59,7 +63,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../Beacon/Source/spring-boot-beacon-app" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/keycloak-docker-compose" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -79,17 +83,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\keycloak-docker-compose" />
       <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\spring-boot-keycloak-app\src\test" />
       <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\spring-boot-starter-keycloak" />
       <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\spring-boot-keycloak-test" />
       <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\spring-boot-keycloak-bom" />
-      <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\spring-boot-keycloak-authorization-client" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\keycloak-docker-compose\keycloak" />
+      <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\keycloak-docker-compose\nginx" />
       <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent" />
       <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\spring-boot-app" />
       <recent name="C:\GitHub\Zestic\Products\Authy\Source\authy\dockers\apim\conf" />
-      <recent name="C:\GitHub\Zestic\Products\Authy\Source\authy\dockers" />
     </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.zestic.authy.keycloak.api" />
@@ -111,17 +116,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.spring-boot-keycloak-app">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="AppApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-boot-keycloak-app" />
       <extension name="coverage">
@@ -322,14 +316,8 @@
       <workItem from="1666708963557" duration="884000" />
       <workItem from="1666711818502" duration="2762000" />
       <workItem from="1666763687023" duration="27110000" />
-      <workItem from="1666847737459" duration="5098000" />
-    </task>
-    <task id="LOCAL-00026" summary="Updated">
-      <created>1660903122595</created>
-      <option name="number" value="00026" />
-      <option name="presentableId" value="LOCAL-00026" />
-      <option name="project" value="LOCAL" />
-      <updated>1660903122595</updated>
+      <workItem from="1666847737459" duration="21640000" />
+      <workItem from="1666934974988" duration="1835000" />
     </task>
     <task id="LOCAL-00027" summary="Updated">
       <created>1660929746002</created>
@@ -667,7 +655,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666873926041</updated>
     </task>
-    <option name="localTasksCounter" value="75" />
+    <task id="LOCAL-00075" summary="Updated">
+      <created>1666874150571</created>
+      <option name="number" value="00075" />
+      <option name="presentableId" value="LOCAL-00075" />
+      <option name="project" value="LOCAL" />
+      <updated>1666874150571</updated>
+    </task>
+    <option name="localTasksCounter" value="76" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

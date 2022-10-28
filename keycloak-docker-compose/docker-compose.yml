@@ -3,19 +3,22 @@ version: '3.4'
 services:
 
   nginx:
-    image: nginx:1.15.1
-    container_name: authy-nginx
-    restart: on-failure
+    image: nginx
+    container_name: nginx
+    restart: unless-stopped
     volumes:
-      - ./nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./nginx/nginx.conf:/etc/nginx/nginx.conf
+      - ./nginx/www:/usr/share/nginx/html
     ports:
       - "9080:9080"
+    depends_on:
+      - keycloak
     networks:
       - zestic.internal
 
   postgres:
     image: postgres
-    container_name: authy-postgres
+    container_name: postgres
     restart: always
     volumes:
       - /zestic/authy/postgres:/var/lib/postgres
@@ -27,12 +30,11 @@ services:
       - zestic.internal
 
   keycloak:
-    container_name: authy-keycloak
+    container_name: keycloak
     image: quay.io/keycloak/keycloak:17.0.0-legacy
     restart: unless-stopped
-    #volumes:
-      #- /zestic/authy/keycloak/themes:/opt/jboss/keycloak/themes
-      #- ./themes:/opt/jboss/keycloak/themes/zestic
+    volumes:
+      - ./keycloak/profile.properties:/opt/jboss/keycloak/standalone/configuration/profile.properties
     logging:
       options:
         max-size: "10m"
@@ -41,28 +43,31 @@ services:
       - DEBUGGING=1
       - KEYCLOAK_USER=admin
       - KEYCLOAK_PASSWORD=Pa55w0rd
+      - KEYCLOAK_LOGLEVEL=INFO
+      - KEYCLOAK_STATISTICS=all
       - DB_VENDOR=POSTGRES
       - DB_ADDR=postgres
       - DB_PORT=5432
       - DB_DATABASE=keycloak
       - DB_USER=keycloak
       - DB_PASSWORD=keycloakrw
-      - KEYCLOAK_LOGLEVEL=INFO
-    #ports:
-      #- "9080:8080"
+      - DB_SCHEMA=public
+      - PROXY_ADDRESS_FORWARDING=true
+      - KC_PROXY=edge
+      - KC_METRICS_ENABLED=true
+    depends_on:
+      - postgres
     networks:
       - zestic.internal
 
   authy:
-    container_name: authy-app
+    container_name: app
     depends_on:
       - keycloak
     image: zesticsolutions/authy:latest
     restart: unless-stopped
     volumes:
       - /zestic/authy/app:/opt/service/config
-    ports:
-      - "9090:9090"
     networks:
       - zestic.internal
       - zestic.external
