@@ -5,24 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f4d75cb-5e7f-4c2b-b040-2177c6e522c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/keycloak-docker-compose/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keycloak-docker-compose/database.dev.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keycloak-docker-compose/keycloak.dev.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keycloak-docker-compose/keycloak/setup/keycloak-configuration-helpers.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keycloak-docker-compose/keycloak/setup/keycloak-configuration.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keycloak-docker-compose/keycloak/setup/realm_master.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keycloak-docker-compose/keycloak/setup/realm_myrealm.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keycloak-docker-compose/keycloak/setup/realms.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keycloak-docker-compose/rebuild-app.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keycloak-docker-compose/rebuild-keycloak.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keycloak-docker-compose/rebuild-nginx.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/keycloak-docker-compose/start.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-docker-compose/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/nginx/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-docker-compose/nginx/nginx.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/shutdown.sh" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-docker-compose/shutdown.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/controller/RealmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/controller/RealmController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -351,14 +334,7 @@
       <workItem from="1668503204692" duration="2645000" />
       <workItem from="1668607742061" duration="2454000" />
       <workItem from="1668756470804" duration="1082000" />
-      <workItem from="1668867659394" duration="1467000" />
-    </task>
-    <task id="LOCAL-00033" summary="Updated">
-      <created>1661147707583</created>
-      <option name="number" value="00033" />
-      <option name="presentableId" value="LOCAL-00033" />
-      <option name="project" value="LOCAL" />
-      <updated>1661147707583</updated>
+      <workItem from="1668867659394" duration="2120000" />
     </task>
     <task id="LOCAL-00034" summary="Updated">
       <created>1661148303433</created>
@@ -696,7 +672,14 @@
       <option name="project" value="LOCAL" />
       <updated>1666983926317</updated>
     </task>
-    <option name="localTasksCounter" value="82" />
+    <task id="LOCAL-00082" summary="Updated">
+      <created>1668869296075</created>
+      <option name="number" value="00082" />
+      <option name="presentableId" value="LOCAL-00082" />
+      <option name="project" value="LOCAL" />
+      <updated>1668869296076</updated>
+    </task>
+    <option name="localTasksCounter" value="83" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
