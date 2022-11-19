@@ -43,14 +43,14 @@ services:
     networks:
       - keycloak
 
-  pgadmin:
-    image: "dpage/pgadmin4:5.1"
-    env_file:
-      - ./database.dev.env
-    depends_on:
-      - postgres
-    networks:
-      - keycloak
+#  pgadmin:
+#    image: "dpage/pgadmin4:5.1"
+#    env_file:
+#      - ./database.dev.env
+#    depends_on:
+#      - postgres
+#    networks:
+#      - keycloak
 
   app:
     depends_on:
