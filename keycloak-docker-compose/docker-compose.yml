@@ -13,7 +13,7 @@ services:
     depends_on:
       - keycloak
     networks:
-      - backend
+      - keycloak
 
   keycloak:
 #    container_name: keycloak
@@ -29,7 +29,7 @@ services:
     depends_on:
       - authy-postgres
     networks:
-      - backend
+      - keycloak
 
   authy-app:
 #    container_name: authy-app
@@ -39,7 +39,7 @@ services:
     volumes:
       - /zestic/authy/app:/opt/service/config
     networks:
-      - backend
+      - keycloak
 
   authy-postgres:
 #    container_name: authy-postgres
@@ -54,7 +54,7 @@ services:
       POSTGRES_USER: keycloak
       POSTGRES_PASSWORD: keycloakrw
     networks:
-      - backend
+      - keycloak
 
   authy-pgadmin:
 #    container_name: authy-pgadmin
@@ -62,9 +62,9 @@ services:
     env_file:
       - ./database.dev.env
     networks:
-      - backend
+      - keycloak
 
 networks:
-  backend:
-    name: backend
+  keycloak:
+    name: keycloak
     driver: bridge
