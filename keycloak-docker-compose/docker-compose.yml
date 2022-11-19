@@ -66,5 +66,4 @@ services:
 
 networks:
   keycloak:
-    name: keycloak
-    driver: bridge
+    external: true
