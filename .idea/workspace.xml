@@ -5,8 +5,24 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f4d75cb-5e7f-4c2b-b040-2177c6e522c3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/keycloak-docker-compose/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keycloak-docker-compose/database.dev.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keycloak-docker-compose/keycloak.dev.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keycloak-docker-compose/keycloak/setup/keycloak-configuration-helpers.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keycloak-docker-compose/keycloak/setup/keycloak-configuration.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keycloak-docker-compose/keycloak/setup/realm_master.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keycloak-docker-compose/keycloak/setup/realm_myrealm.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keycloak-docker-compose/keycloak/setup/realms.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keycloak-docker-compose/rebuild-app.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keycloak-docker-compose/rebuild-keycloak.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keycloak-docker-compose/rebuild-nginx.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/keycloak-docker-compose/start.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-docker-compose/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/nginx/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-docker-compose/nginx/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/shutdown.sh" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-docker-compose/shutdown.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/controller/RealmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/controller/RealmController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +74,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/keycloak-docker-compose" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -78,11 +94,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\keycloak-docker-compose\keycloak\setup" />
       <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\keycloak-docker-compose" />
       <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\spring-boot-keycloak-app\src\test" />
       <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\spring-boot-starter-keycloak" />
       <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\spring-boot-keycloak-test" />
-      <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\spring-boot-keycloak-bom" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\keycloak-docker-compose" />
@@ -111,15 +127,13 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.spring-boot-keycloak-app">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -325,21 +339,19 @@
       <workItem from="1666711818502" duration="2762000" />
       <workItem from="1666763687023" duration="27110000" />
       <workItem from="1666847737459" duration="21640000" />
-      <workItem from="1666934974988" duration="4601000" />
-    </task>
-    <task id="LOCAL-00031" summary="Updated">
-      <created>1661145094645</created>
-      <option name="number" value="00031" />
-      <option name="presentableId" value="LOCAL-00031" />
-      <option name="project" value="LOCAL" />
-      <updated>1661145094645</updated>
-    </task>
-    <task id="LOCAL-00032" summary="Updated">
-      <created>1661147597034</created>
-      <option name="number" value="00032" />
-      <option name="presentableId" value="LOCAL-00032" />
-      <option name="project" value="LOCAL" />
-      <updated>1661147597034</updated>
+      <workItem from="1666934974988" duration="5619000" />
+      <workItem from="1667054690779" duration="10407000" />
+      <workItem from="1667141351107" duration="834000" />
+      <workItem from="1667203966282" duration="2360000" />
+      <workItem from="1667984131869" duration="432000" />
+      <workItem from="1668008624674" duration="2319000" />
+      <workItem from="1668058874345" duration="1757000" />
+      <workItem from="1668070011326" duration="1191000" />
+      <workItem from="1668261817756" duration="1369000" />
+      <workItem from="1668503204692" duration="2645000" />
+      <workItem from="1668607742061" duration="2454000" />
+      <workItem from="1668756470804" duration="1082000" />
+      <workItem from="1668867659394" duration="1467000" />
     </task>
     <task id="LOCAL-00033" summary="Updated">
       <created>1661147707583</created>
@@ -670,7 +682,21 @@
       <option name="project" value="LOCAL" />
       <updated>1666983591542</updated>
     </task>
-    <option name="localTasksCounter" value="80" />
+    <task id="LOCAL-00080" summary="Updated">
+      <created>1666983866223</created>
+      <option name="number" value="00080" />
+      <option name="presentableId" value="LOCAL-00080" />
+      <option name="project" value="LOCAL" />
+      <updated>1666983866223</updated>
+    </task>
+    <task id="LOCAL-00081" summary="Updated">
+      <created>1666983926317</created>
+      <option name="number" value="00081" />
+      <option name="presentableId" value="LOCAL-00081" />
+      <option name="project" value="LOCAL" />
+      <updated>1666983926317</updated>
+    </task>
+    <option name="localTasksCounter" value="82" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

@@ -1,6 +1,8 @@
 package in.zestic.authy.app.controller;
 
 import in.zestic.authy.app.service.RealmService;
+import in.zestic.authy.app.validator.ClientValidation;
+import in.zestic.authy.keycloak.api.entity.Realm;
 import in.zestic.common.entity.Result;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;
@@ -8,9 +10,7 @@ import io.swagger.annotations.ApiResponses;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 @RestController
 @RequestMapping(value = "/realms", produces = {MediaType.APPLICATION_JSON_VALUE})
@@ -20,6 +20,17 @@ public class RealmController {
 
     public RealmController(RealmService service) {
         this.service = service;
+    }
+
+    @ApiOperation(value = "Create a new realm", response = ResponseEntity.class)
+    @ApiResponses(value = {
+            @ApiResponse(code = 201, message = "Realm created"),
+            @ApiResponse(code = 401, message = "Unauthorized")
+    })
+    @PostMapping(path = "")
+    public ResponseEntity<Result> create(@ClientValidation @RequestBody Realm realm) {
+        Result response = service.create(realm);
+        return new ResponseEntity<Result>(response, HttpStatus.valueOf(response.getCode()));
     }
 
     @ApiOperation(value = "Find all realms", response = ResponseEntity.class)
