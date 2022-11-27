@@ -5,6 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f4d75cb-5e7f-4c2b-b040-2177c6e522c3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.$aws-solution-overview.drawio.bkp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/aws-solution-overview.drawio" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-docker-compose/docker-compose.yml" afterDir="false" />
     </list>
@@ -111,13 +113,15 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.spring-boot-keycloak-app">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
       <option name="arquillianRunConfiguration">
         <value>
           <option name="containerStateName" value="" />
         </value>
       </option>
-      <option name="TEST_OBJECT" value="class" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -335,14 +339,8 @@
       <workItem from="1668503204692" duration="2645000" />
       <workItem from="1668607742061" duration="2454000" />
       <workItem from="1668756470804" duration="1082000" />
-      <workItem from="1668867659394" duration="5072000" />
-    </task>
-    <task id="LOCAL-00043" summary="Updated">
-      <created>1661189818157</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1661189818157</updated>
+      <workItem from="1668867659394" duration="5542000" />
+      <workItem from="1669564607839" duration="347000" />
     </task>
     <task id="LOCAL-00044" summary="Updated">
       <created>1661190165001</created>
@@ -680,7 +678,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668872165386</updated>
     </task>
-    <option name="localTasksCounter" value="92" />
+    <task id="LOCAL-00092" summary="Docker compose 3.9 container_name: Setting the container name is not supported.">
+      <created>1668872990945</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1668872990945</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
