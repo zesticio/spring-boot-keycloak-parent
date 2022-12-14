@@ -4,11 +4,16 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f4d75cb-5e7f-4c2b-b040-2177c6e522c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.$aws-solution-overview.drawio.bkp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/aws-solution-overview.drawio" afterDir="false" />
+    <list default="true" id="3f4d75cb-5e7f-4c2b-b040-2177c6e522c3" name="Default Changelist" comment="Updated">
+      <change beforePath="$PROJECT_DIR$/.$aws-solution-overview.drawio.bkp" beforeDir="false" afterPath="$PROJECT_DIR$/.$aws-solution-overview.drawio.bkp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/aws-solution-overview.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/aws-solution-overview.drawio" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-docker-compose/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/keycloak.dev.env" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-docker-compose/keycloak.dev.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/network.sh" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-docker-compose/network.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/nginx/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-docker-compose/nginx/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/sql/2-init-keycloak-db.sh" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-docker-compose/sql/2-init-keycloak-db.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-docker-compose/html/index.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,7 +65,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../dockers" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -113,19 +118,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.spring-boot-keycloak-app">
-    <configuration default="true" type="ArquillianTestNG" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="CLASS" />
-      <properties />
-      <listeners />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="AppApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-boot-keycloak-app" />
       <extension name="coverage">
@@ -340,14 +332,10 @@
       <workItem from="1668607742061" duration="2454000" />
       <workItem from="1668756470804" duration="1082000" />
       <workItem from="1668867659394" duration="5542000" />
-      <workItem from="1669564607839" duration="347000" />
-    </task>
-    <task id="LOCAL-00044" summary="Updated">
-      <created>1661190165001</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1661190165001</updated>
+      <workItem from="1669564607839" duration="3751000" />
+      <workItem from="1670566223299" duration="202000" />
+      <workItem from="1671023762545" duration="1249000" />
+      <workItem from="1671027672821" duration="3836000" />
     </task>
     <task id="LOCAL-00045" summary="Updated">
       <created>1661226759735</created>
@@ -685,7 +673,14 @@
       <option name="project" value="LOCAL" />
       <updated>1668872990945</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="Updated">
+      <created>1669564983029</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1669564983029</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -723,9 +718,9 @@
     <MESSAGE value="Moved to postgres database, in mysql there was primary key exception" />
     <MESSAGE value="Added overnet network between host" />
     <MESSAGE value="Updated docker-compose to 3.9" />
-    <MESSAGE value="Updated" />
     <MESSAGE value="Docker compose 3.9 container_name: Setting the container name is not supported." />
-    <option name="LAST_COMMIT_MESSAGE" value="Docker compose 3.9 container_name: Setting the container name is not supported." />
+    <MESSAGE value="Updated" />
+    <option name="LAST_COMMIT_MESSAGE" value="Updated" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

@@ -3,51 +3,58 @@ version: '3.9'
 services:
 
   nginx:
-    image: nginx
+    image: nginx:latest
+    restart: always
     volumes:
       - ./nginx/nginx.conf:/etc/nginx/nginx.conf:ro
-      - ./www/index.html:/usr/share/nginx/html/index.html:ro
+      - ./html:/var/www/html
     ports:
-      - "9080:9080"
-    depends_on:
-      - keycloak
+      - "9080:80"
+#    depends_on:
+#      - keycloak
     networks:
       - keycloak
 
-  keycloak:
-    image: quay.io/keycloak/keycloak:17.0.0-legacy
-    env_file:
-      - ./keycloak.dev.env
-    volumes:
-      - ./keycloak/profile.properties:/opt/jboss/keycloak/standalone/configuration/profile.properties
-    logging:
-      options:
-        max-size: "10m"
-        max-file: "3"
-    depends_on:
-      - postgres
-    networks:
-      - keycloak
+#  keycloak:
+#    image: quay.io/keycloak/keycloak:17.0.0-legacy
+#    restart: always
+#    env_file:
+#      - ./keycloak.dev.env
+#    volumes:
+#      - ./keycloak/profile.properties:/opt/jboss/keycloak/standalone/configuration/profile.properties
+#    ports:
+#      - "9990:9990"
+#    logging:
+#      options:
+#        max-size: "10m"
+#        max-file: "3"
+#    depends_on:
+#      - postgres
+#    networks:
+#      - keycloak
+#
+#  postgres:
+#    image: postgres
+#    restart: always
+#    env_file:
+#      - ./database.dev.env
+#    volumes:
+#      - /zestic/authy/postgres:/var/lib/postgresql/data/
+#      - ./sql:/docker-entrypoint-initdb.d/:ro
+#    networks:
+#      - keycloak
 
-  postgres:
-    image: postgres
-    env_file:
-      - ./database.dev.env
-    volumes:
-      - /zestic/authy/postgres:/var/lib/postgresql/data/
-      - ./sql:/docker-entrypoint-initdb.d/:ro
-    networks:
-      - keycloak
-
-  app:
-    depends_on:
-      - keycloak
-    image: zesticsolutions/authy:latest
-    volumes:
-      - /zestic/authy/app:/opt/service/config
-    networks:
-      - keycloak
+#  app:
+#    image: zesticsolutions/authy:latest
+#    restart: always
+#    volumes:
+#      - /zestic/authy/app:/opt/service/config
+#    depends_on:
+#      - keycloak
+#    networks:
+#      - keycloak
 
 networks:
   keycloak:
+    name: keycloak
     external: true
