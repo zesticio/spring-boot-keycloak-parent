@@ -1,9 +1,8 @@
 package in.zestic.authy.app.controller;
 
 import in.zestic.authy.app.service.ClientService;
-import in.zestic.authy.app.service.impl.ClientServiceImpl;
 import in.zestic.authy.app.validator.ClientValidation;
-import in.zestic.authy.keycloak.api.entity.Client;
+import in.zestic.authy.keycloak.demo.entity.Client;
 import in.zestic.common.entity.Result;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;

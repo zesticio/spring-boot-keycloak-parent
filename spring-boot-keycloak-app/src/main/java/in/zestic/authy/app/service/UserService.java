@@ -1,6 +1,6 @@
 package in.zestic.authy.app.service;
 
-import in.zestic.authy.keycloak.api.entity.User;
+import in.zestic.authy.keycloak.demo.entity.User;
 import in.zestic.common.entity.Result;
 
 import java.util.Optional;

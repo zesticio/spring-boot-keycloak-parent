@@ -29,6 +29,7 @@
         <module>spring-boot-keycloak-authorization-client</module>
         <module>spring-boot-keycloak-bom</module>
         <module>spring-boot-keycloak-test</module>
+        <module>spring-boot-keycloak-demo1</module>
     </modules>
 
     <dependencyManagement>

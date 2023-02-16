@@ -1,4 +1,4 @@
-package in.zestic.authy.keycloak.api.entity;
+package in.zestic.authy.keycloak.demo.entity;
 
 import in.zestic.common.entity.Entity;
 import lombok.AllArgsConstructor;

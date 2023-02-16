@@ -2,7 +2,7 @@ package in.zestic.authy.app.controller;
 
 import in.zestic.authy.app.service.RealmService;
 import in.zestic.authy.app.validator.ClientValidation;
-import in.zestic.authy.keycloak.api.entity.Realm;
+import in.zestic.authy.keycloak.demo.entity.Realm;
 import in.zestic.common.entity.Result;
 import io.swagger.annotations.ApiOperation;
 import io.swagger.annotations.ApiResponse;

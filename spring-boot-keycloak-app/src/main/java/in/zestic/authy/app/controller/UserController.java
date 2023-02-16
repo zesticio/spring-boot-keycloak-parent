@@ -2,7 +2,7 @@ package in.zestic.authy.app.controller;
 
 import in.zestic.authy.app.service.impl.UserServiceImpl;
 import in.zestic.authy.app.validator.UserValidation;
-import in.zestic.authy.keycloak.api.entity.User;
+import in.zestic.authy.keycloak.demo.entity.User;
 import in.zestic.common.entity.Result;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;

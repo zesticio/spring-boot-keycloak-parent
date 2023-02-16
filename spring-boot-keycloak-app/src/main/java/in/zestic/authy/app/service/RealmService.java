@@ -1,7 +1,6 @@
 package in.zestic.authy.app.service;
 
-import in.zestic.authy.keycloak.api.entity.Client;
-import in.zestic.authy.keycloak.api.entity.Realm;
+import in.zestic.authy.keycloak.demo.entity.Realm;
 import in.zestic.common.entity.Result;
 
 public interface RealmService {

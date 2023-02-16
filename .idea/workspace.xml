@@ -4,16 +4,57 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="3f4d75cb-5e7f-4c2b-b040-2177c6e522c3" name="Default Changelist" comment="Updated">
-      <change beforePath="$PROJECT_DIR$/.$aws-solution-overview.drawio.bkp" beforeDir="false" afterPath="$PROJECT_DIR$/.$aws-solution-overview.drawio.bkp" afterDir="false" />
+    <list default="true" id="3f4d75cb-5e7f-4c2b-b040-2177c6e522c3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/docker/network.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/nginx/cert.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/portainer/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/aws-solution-overview.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/aws-solution-overview.drawio" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-docker-compose/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/keycloak.dev.env" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-docker-compose/keycloak.dev.env" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/network.sh" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-docker-compose/network.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/nginx/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-docker-compose/nginx/nginx.conf" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/sql/2-init-keycloak-db.sh" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-docker-compose/sql/2-init-keycloak-db.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/www/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/keycloak-docker-compose/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/.env" beforeDir="false" afterPath="$PROJECT_DIR$/docker/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/docker/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/database.dev.env" beforeDir="false" afterPath="$PROJECT_DIR$/docker/database.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/deploy.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker/deploy.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/html/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/docker/html/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/keycloak.dev.env" beforeDir="false" afterPath="$PROJECT_DIR$/docker/keycloak.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/keycloak/create.sql" beforeDir="false" afterPath="$PROJECT_DIR$/docker/keycloak/create.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/keycloak/profile.properties" beforeDir="false" afterPath="$PROJECT_DIR$/docker/keycloak/profile.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/keycloak/setup/keycloak-configuration-helpers.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker/keycloak/setup/keycloak-configuration-helpers.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/keycloak/setup/keycloak-configuration.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker/keycloak/setup/keycloak-configuration.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/keycloak/setup/realm_master.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker/keycloak/setup/realm_master.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/keycloak/setup/realm_myrealm.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker/keycloak/setup/realm_myrealm.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/keycloak/setup/realms.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker/keycloak/setup/realms.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/network.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/nginx/mime.types" beforeDir="false" afterPath="$PROJECT_DIR$/docker/nginx/mime.types" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/nginx/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/nginx/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/rebuild-app.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/shutdown.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker/shutdown.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/sql/0-create-app-db.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker/sql/0-create-app-db.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/sql/1-init-app-db.sql" beforeDir="false" afterPath="$PROJECT_DIR$/docker/sql/1-init-app-db.sql" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/sql/2-init-keycloak-db.sh" beforeDir="false" afterPath="$PROJECT_DIR$/docker/sql/2-init-keycloak-db.sh" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/keycloak-docker-compose/start.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-api/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-api/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-api/src/main/java/in/zestic/authy/keycloak/api/entity/Client.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-api/src/main/java/in/zestic/authy/keycloak/demo/entity/Client.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-api/src/main/java/in/zestic/authy/keycloak/api/entity/Realm.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-api/src/main/java/in/zestic/authy/keycloak/demo/entity/Realm.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-api/src/main/java/in/zestic/authy/keycloak/api/entity/SMTPServer.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-api/src/main/java/in/zestic/authy/keycloak/demo/entity/SMTPServer.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-api/src/main/java/in/zestic/authy/keycloak/api/entity/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-api/src/main/java/in/zestic/authy/keycloak/demo/entity/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-api/src/main/java/in/zestic/authy/keycloak/api/exception/KeycloakException.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-api/src/main/java/in/zestic/authy/keycloak/demo/exception/KeycloakException.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-api/src/test/java/in/zestic/authy/keycloak/api/SpringBootKeycloakApiApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-api/src/test/java/in/zestic/authy/keycloak/demo/SpringBootKeycloakApiApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-app/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/controller/ClientController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/controller/ClientController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/controller/RealmController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/controller/RealmController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/handler/GlobalExceptionHandler.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/handler/GlobalExceptionHandler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/ClientService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/ClientService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/RealmService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/RealmService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/impl/ClientServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/impl/ClientServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/impl/RealmServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/impl/RealmServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/impl/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/service/impl/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/validator/impl/ClientValidationImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/validator/impl/ClientValidationImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/validator/impl/UserValidationImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-keycloak-app/src/main/java/in/zestic/authy/app/validator/impl/UserValidationImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-starter-keycloak/src/main/java/in/zestic/authy/keycloak/security/CurrentUserProvider.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-starter-keycloak/src/main/java/in/zestic/authy/keycloak/security/CurrentUserProvider.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +106,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../../dockers" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/docker/portainer" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -85,11 +126,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\docker\portainer" />
+      <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\keycloak-docker-compose\nginx" />
+      <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\spring-boot-keycloak-demo1\src\main\java\in\zestic\authy\keycloak\demo" />
       <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\keycloak-docker-compose\keycloak\setup" />
       <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\keycloak-docker-compose" />
-      <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\spring-boot-keycloak-app\src\test" />
-      <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\spring-boot-starter-keycloak" />
-      <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\spring-boot-keycloak-test" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\keycloak-docker-compose" />
@@ -103,11 +144,11 @@
       <recent name="com.zestic.authy.keycloak" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="in.zestic.authy.app.demo" />
       <recent name="in.zestic.authy.keycloak.api.entity" />
       <recent name="in.zestic.authy.app.service.impl" />
       <recent name="in.zestic.authy.app.service" />
       <recent name="in.zestic.authy.app.controller" />
-      <recent name="in.zestic.authy.app.validator" />
     </key>
   </component>
   <component name="RunAnythingCache">
@@ -118,6 +159,17 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.spring-boot-keycloak-app">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="AppApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-boot-keycloak-app" />
       <extension name="coverage">
@@ -142,7 +194,7 @@
         <option name="IS_IGNORE_MISSING_FILES" value="false" />
         <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
         <ENTRIES>
-          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
         </ENTRIES>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="in.zestic.authy.app.Application" />
@@ -161,7 +213,7 @@
         <option name="IS_IGNORE_MISSING_FILES" value="false" />
         <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
         <ENTRIES>
-          <ENTRY IS_ENABLED="true" PARSER="runconfig" />
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
         </ENTRIES>
       </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="in.zestic.authy.authorization.client.Application" />
@@ -335,14 +387,21 @@
       <workItem from="1669564607839" duration="3751000" />
       <workItem from="1670566223299" duration="202000" />
       <workItem from="1671023762545" duration="1249000" />
-      <workItem from="1671027672821" duration="3836000" />
-    </task>
-    <task id="LOCAL-00045" summary="Updated">
-      <created>1661226759735</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1661226759735</updated>
+      <workItem from="1671027672821" duration="4246000" />
+      <workItem from="1671110244356" duration="2196000" />
+      <workItem from="1672816193394" duration="640000" />
+      <workItem from="1672817833010" duration="18000" />
+      <workItem from="1672817864629" duration="2245000" />
+      <workItem from="1672840957126" duration="314000" />
+      <workItem from="1672841304663" duration="2235000" />
+      <workItem from="1673372786162" duration="4220000" />
+      <workItem from="1673416947787" duration="19000" />
+      <workItem from="1673457887374" duration="528000" />
+      <workItem from="1675063272229" duration="1231000" />
+      <workItem from="1675149667944" duration="364000" />
+      <workItem from="1676448727192" duration="5368000" />
+      <workItem from="1676524343319" duration="2106000" />
+      <workItem from="1676551730546" duration="3078000" />
     </task>
     <task id="LOCAL-00046" summary="Updated">
       <created>1661430487234</created>
@@ -680,7 +739,14 @@
       <option name="project" value="LOCAL" />
       <updated>1669564983029</updated>
     </task>
-    <option name="localTasksCounter" value="94" />
+    <task id="LOCAL-00094" summary="Updated">
+      <created>1671038007714</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1671038007715</updated>
+    </task>
+    <option name="localTasksCounter" value="95" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

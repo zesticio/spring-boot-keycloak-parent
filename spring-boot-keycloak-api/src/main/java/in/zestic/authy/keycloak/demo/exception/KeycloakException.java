@@ -16,7 +16,7 @@
  * limitations under the License.
  */
 
-package in.zestic.authy.keycloak.api.exception;
+package in.zestic.authy.keycloak.demo.exception;
 
 import in.zestic.common.exception.ApplicationError;
 import in.zestic.common.exception.ApplicationException;

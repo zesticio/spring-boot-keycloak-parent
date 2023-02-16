@@ -1,6 +1,6 @@
 package in.zestic.authy.keycloak.security;
 
-import in.zestic.authy.keycloak.api.entity.User;
+import in.zestic.authy.keycloak.demo.entity.User;
 import org.keycloak.KeycloakPrincipal;
 import org.keycloak.adapters.RefreshableKeycloakSecurityContext;
 import org.springframework.context.annotation.Bean;

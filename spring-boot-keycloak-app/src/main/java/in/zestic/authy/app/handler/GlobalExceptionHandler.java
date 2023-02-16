@@ -1,21 +1,14 @@
 package in.zestic.authy.app.handler;
 
-import in.zestic.authy.keycloak.api.exception.KeycloakException;
 import in.zestic.common.entity.Result;
-import in.zestic.common.handlers.BaseGlobalExceptionHandler;
-import in.zestic.common.ratelimit.RateLimitException;
-import org.apache.http.conn.HttpHostConnectException;
-import org.springframework.context.annotation.ComponentScan;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.authentication.BadCredentialsException;
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.web.bind.annotation.ControllerAdvice;
 import org.springframework.web.bind.annotation.ExceptionHandler;
 import org.springframework.web.context.request.WebRequest;
 import org.springframework.web.servlet.mvc.method.annotation.ResponseEntityExceptionHandler;
 
-import javax.servlet.http.HttpServletResponse;
 import javax.ws.rs.ForbiddenException;
 import javax.ws.rs.NotAuthorizedException;
 import java.io.IOException;

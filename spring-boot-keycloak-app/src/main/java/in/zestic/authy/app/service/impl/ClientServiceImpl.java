@@ -3,15 +3,13 @@ package in.zestic.authy.app.service.impl;
 import in.zestic.authy.app.config.KeycloakProperties;
 import in.zestic.authy.app.service.BaseService;
 import in.zestic.authy.app.service.ClientService;
-import in.zestic.authy.app.validator.ClientValidation;
-import in.zestic.authy.keycloak.api.entity.Client;
+import in.zestic.authy.keycloak.demo.entity.Client;
 import in.zestic.common.entity.Result;
 import in.zestic.common.util.HTTPErrorCodes;
 import org.keycloak.admin.client.Keycloak;
 import org.keycloak.admin.client.resource.ClientsResource;
 import org.keycloak.representations.idm.ClientRepresentation;
 import org.springframework.stereotype.Service;
-import org.springframework.web.bind.annotation.RequestBody;
 
 import java.util.List;
 

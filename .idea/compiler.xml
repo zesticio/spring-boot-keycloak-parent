@@ -19,6 +19,7 @@
       <module name="spring-boot-keycloak-app" target="11" />
       <module name="spring-boot-keycloak-authorization-client" target="11" />
       <module name="spring-boot-keycloak-bom" target="11" />
+      <module name="spring-boot-keycloak-demo1" target="11" />
       <module name="spring-boot-keycloak-parent" target="11" />
       <module name="spring-boot-keycloak-test" target="11" />
       <module name="spring-boot-starter-keycloak" target="11" />
@@ -29,6 +30,7 @@
       <module name="spring-boot-keycloak-api" options="-parameters" />
       <module name="spring-boot-keycloak-app" options="-parameters" />
       <module name="spring-boot-keycloak-authorization-client" options="-parameters" />
+      <module name="spring-boot-keycloak-demo1" options="-parameters" />
       <module name="spring-boot-keycloak-test" options="-parameters" />
       <module name="spring-boot-starter-keycloak" options="-parameters" />
     </option>

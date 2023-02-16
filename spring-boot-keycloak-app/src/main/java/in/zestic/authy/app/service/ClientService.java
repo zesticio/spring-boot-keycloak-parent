@@ -1,10 +1,7 @@
 package in.zestic.authy.app.service;
 
-import in.zestic.authy.keycloak.api.entity.Client;
-import in.zestic.authy.keycloak.api.entity.User;
+import in.zestic.authy.keycloak.demo.entity.Client;
 import in.zestic.common.entity.Result;
-
-import java.util.Optional;
 
 public interface ClientService {
 

@@ -18,6 +18,11 @@
             <artifactId>spring-boot-starter-common</artifactId>
         </dependency>
         <dependency>
+            <groupId>in.zestic.authy</groupId>
+            <artifactId>spring-boot-keycloak-demo1</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <dependency>
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <optional>true</optional>
