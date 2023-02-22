@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f4d75cb-5e7f-4c2b-b040-2177c6e522c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docker/portainer/nginx/config/mime.types" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/portainer/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/portainer/docker-compose.yml" afterDir="false" />
     </list>
@@ -360,14 +359,7 @@
       <workItem from="1676651506605" duration="584000" />
       <workItem from="1676910628660" duration="1980000" />
       <workItem from="1676988355488" duration="2248000" />
-      <workItem from="1677083997191" duration="1867000" />
-    </task>
-    <task id="LOCAL-00050" summary="Updated">
-      <created>1663089729853</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1663089729853</updated>
+      <workItem from="1677083997191" duration="2203000" />
     </task>
     <task id="LOCAL-00051" summary="Updated">
       <created>1663169611728</created>
@@ -705,7 +697,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677084669134</updated>
     </task>
-    <option name="localTasksCounter" value="99" />
+    <task id="LOCAL-00099" summary="Added mariadb">
+      <created>1677085897768</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1677085897768</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -745,7 +744,8 @@
     <MESSAGE value="Updated docker-compose to 3.9" />
     <MESSAGE value="Docker compose 3.9 container_name: Setting the container name is not supported." />
     <MESSAGE value="Updated" />
-    <option name="LAST_COMMIT_MESSAGE" value="Updated" />
+    <MESSAGE value="Added mariadb" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added mariadb" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

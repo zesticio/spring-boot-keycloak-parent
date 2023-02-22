@@ -25,6 +25,24 @@ services:
       MYSQL_PASSWORD: KeycloakDB
     healthcheck:
       test: [ "CMD", "mysqladmin", "ping", "--silent" ]
+    networks:
+      - portainer
+
+  keycloak:
+    image: quay.io/keycloak/keycloak:legacy
+    environment:
+      DB_VENDOR: mariadb
+      DB_ADDR: mariadb
+      DB_DATABASE: keycloak
+      DB_USER: keycloak
+      DB_PASSWORD: KeycloakDB
+      KEYCLOAK_USER: admin
+      KEYCLOAK_PASSWORD: Pa55w0rd
+      JGROUPS_DISCOVERY_PROTOCOL: JDBC_PING
+    depends_on:
+      - mariadb
+    networks:
+      - portainer
 
 networks:
   portainer:
