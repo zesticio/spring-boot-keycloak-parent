@@ -13,6 +13,19 @@ services:
     networks:
       - portainer
 
+  mariadb:
+    image: mariadb
+    container_name: mariadb
+    volumes:
+      - ${DATA}/mysql:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: root
+      MYSQL_DATABASE: keycloak
+      MYSQL_USER: keycloak
+      MYSQL_PASSWORD: KeycloakDB
+    healthcheck:
+      test: [ "CMD", "mysqladmin", "ping", "--silent" ]
+
 networks:
   portainer:
     name: portainer

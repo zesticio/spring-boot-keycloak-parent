@@ -5,11 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3f4d75cb-5e7f-4c2b-b040-2177c6e522c3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/docker/portainer/.env" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/portainer/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/docker/portainer/nginx/config/nginx.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/docker/portainer/nginx/config/mime.types" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/backup/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/backup/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/portainer/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/portainer/docker-compose.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -62,7 +59,7 @@
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/docker/portainer" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/docker/portainer/nginx/config" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -82,11 +79,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\docker\portainer\nginx\config" />
       <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\docker\portainer" />
       <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\keycloak-docker-compose\nginx" />
       <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\spring-boot-keycloak-demo1\src\main\java\in\zestic\authy\keycloak\demo" />
       <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\keycloak-docker-compose\keycloak\setup" />
-      <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\keycloak-docker-compose" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="C:\GitHub\Zestic\Products\Authy\Source\spring-boot-keycloak-parent\docker\backup" />
@@ -363,14 +360,7 @@
       <workItem from="1676651506605" duration="584000" />
       <workItem from="1676910628660" duration="1980000" />
       <workItem from="1676988355488" duration="2248000" />
-      <workItem from="1677083997191" duration="428000" />
-    </task>
-    <task id="LOCAL-00049" summary="Added overnet network between host">
-      <created>1661524054899</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1661524054899</updated>
+      <workItem from="1677083997191" duration="1867000" />
     </task>
     <task id="LOCAL-00050" summary="Updated">
       <created>1663089729853</created>
@@ -708,7 +698,14 @@
       <option name="project" value="LOCAL" />
       <updated>1676564361314</updated>
     </task>
-    <option name="localTasksCounter" value="98" />
+    <task id="LOCAL-00098" summary="Updated">
+      <created>1677084669134</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1677084669134</updated>
+    </task>
+    <option name="localTasksCounter" value="99" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
