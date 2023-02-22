@@ -7,8 +7,9 @@ services:
     container_name: nginx
     restart: always
     ports:
-      - "6080:80"
       - "6443:443"
+    volumes:
+      - ${DATA}/nginx/config:/etc/nginx
     networks:
       - portainer
 
