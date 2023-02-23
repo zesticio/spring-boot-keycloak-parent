@@ -6,34 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="3f4d75cb-5e7f-4c2b-b040-2177c6e522c3" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/backup/.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/backup/README.md" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/backup/database.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/backup/deploy.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/backup/docker-compose.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/backup/html/index.html" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/backup/keycloak.env" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/backup/keycloak/create.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/backup/keycloak/profile.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/backup/keycloak/setup/keycloak-configuration-helpers.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/backup/keycloak/setup/keycloak-configuration.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/backup/keycloak/setup/realm_master.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/backup/keycloak/setup/realm_myrealm.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/backup/keycloak/setup/realms.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/backup/network.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/backup/nginx/cert.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/backup/nginx/certificates.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/backup/nginx/mime.types" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/backup/nginx/nginx.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/backup/nginx/nginx.crt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/backup/nginx/nginx.pem" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/backup/nginx/ssl-params.conf" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/backup/shutdown.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/backup/sql/0-create-app-db.sh" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/backup/sql/1-init-app-db.sql" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/backup/sql/2-init-keycloak-db.sh" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/docker/portainer/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker/portainer/docker-compose.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker/portainer/nginx/config/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/docker/portainer/nginx/config/nginx.conf" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -138,17 +111,6 @@
     </option>
   </component>
   <component name="RunManager" selected="Spring Boot.spring-boot-keycloak-app">
-    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
-      <option name="arquillianRunConfiguration">
-        <value>
-          <option name="containerStateName" value="" />
-        </value>
-      </option>
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="AppApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="spring-boot-keycloak-app" />
       <extension name="coverage">
@@ -386,14 +348,8 @@
       <workItem from="1676651506605" duration="584000" />
       <workItem from="1676910628660" duration="1980000" />
       <workItem from="1676988355488" duration="2248000" />
-      <workItem from="1677083997191" duration="5144000" />
-    </task>
-    <task id="LOCAL-00054" summary="Updated">
-      <created>1663692471122</created>
-      <option name="number" value="00054" />
-      <option name="presentableId" value="LOCAL-00054" />
-      <option name="project" value="LOCAL" />
-      <updated>1663692471122</updated>
+      <workItem from="1677083997191" duration="5400000" />
+      <workItem from="1677146566615" duration="29000" />
     </task>
     <task id="LOCAL-00055" summary="Updated">
       <created>1665077776446</created>
@@ -731,7 +687,14 @@
       <option name="project" value="LOCAL" />
       <updated>1677086464787</updated>
     </task>
-    <option name="localTasksCounter" value="103" />
+    <task id="LOCAL-00103" summary="Added keycloak">
+      <created>1677089209182</created>
+      <option name="number" value="00103" />
+      <option name="presentableId" value="LOCAL-00103" />
+      <option name="project" value="LOCAL" />
+      <updated>1677089209182</updated>
+    </task>
+    <option name="localTasksCounter" value="104" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -772,7 +735,8 @@
     <MESSAGE value="Docker compose 3.9 container_name: Setting the container name is not supported." />
     <MESSAGE value="Updated" />
     <MESSAGE value="Added mariadb" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added mariadb" />
+    <MESSAGE value="Added keycloak" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added keycloak" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

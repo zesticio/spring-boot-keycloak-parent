@@ -31,6 +31,8 @@ services:
   keycloak:
     image: quay.io/keycloak/keycloak:legacy
     container_name: keycloak
+    ports:
+      - "6080:8080"
     environment:
       DB_VENDOR: mariadb
       DB_ADDR: mariadb
